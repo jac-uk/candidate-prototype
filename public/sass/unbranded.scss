@@ -15,7 +15,12 @@
 $govuk-global-styles: true;
 
 // Override the govuk-frontend font stack
-$govuk-font-family: "Khula", "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+$govuk-font-family: "Khula",
+"HelveticaNeue",
+"Helvetica Neue",
+"Arial",
+"Helvetica",
+sans-serif;
 
 // Override the canvas background colour, which is normally grey to blend with
 // the GOV.UK footer.
@@ -25,17 +30,18 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 // JAC bespoke css can go here
 .govuk-button {
-    background-color: #753880;
-    box-shadow: 0 2px 0 #5e2d66;
-  }
+  background-color: #753880;
+  box-shadow: 0 2px 0 #5e2d66;
+}
 
-.govuk-button:hover, .govuk-button:focus {
-    background-color: #5e2d66;
-  }
+.govuk-button:hover,
+.govuk-button:focus {
+  background-color: #5e2d66;
+}
 
 .govuk-footer {
-    background-color: #f8f8f7;
-    border-top: 1px solid #aca9a0;
+  background-color: #f8f8f7;
+  border-top: 1px solid #aca9a0;
 }
 
 
@@ -46,6 +52,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+
   @include govuk-media-query($from: tablet) {
     min-width: 550px;
   }
@@ -70,6 +77,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   @include govuk-responsive-margin(9, "bottom");
   list-style: none;
   padding-left: 0;
+
   @include govuk-media-query($from: tablet) {
     padding-left: govuk-spacing(6);
   }
@@ -89,6 +97,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 .app-task-list__task-name {
   display: block;
+
   @include govuk-media-query($from: 450px) {
     float: left;
     width: 75%;
@@ -124,6 +133,12 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  }
+}
 
+.govuk-tag-task-list-approvals {
+  background-color: #ECA01D;
+}
 
+.govuk-form-group {
+  margin-bottom: 40px;
+}

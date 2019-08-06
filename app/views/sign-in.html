@@ -26,16 +26,29 @@ Sign in
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
 
-    <form class="form" action="sign-up" method="post">
+    <form class="form" action="profile" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h2>
-            <div><a href="eligibility">Eligibility</a></div>
-            <div><a href="home">Applicant profile creation</a></div>
-            <!--<div><a href="#">Applicant application submission</a></div>-->
-          </h2>
+          <h1 class="govuk-heading-xl">
+            Sign in
+          </h1>
 
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Send magic link
+          </button>
+          <div>
+            <a href="#">
+              Forgotten your password?
+            </a>
+          </div>
         </div>
         <!--two-thirds-->
       </div>
