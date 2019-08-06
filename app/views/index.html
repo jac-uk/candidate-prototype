@@ -1,0 +1,86 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!--HEADER-->
+  <div class="govuk-heading-l">Judicial Appointments Commission</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag">
+          alpha
+        </strong>
+        <span class="govuk-phase-banner__text">
+          This is a new service – your feedback will help us improve it.
+        </span>
+      </p>
+    </div>
+  <!--END HEADER-->
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <form class="form" action="dashboard" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          
+          <h1 class="govuk-heading-xl">
+            Sign in
+          </h1>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Password
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Sign in
+          </button>
+          <div>
+            <a href="#">
+              Forgotten your password?
+            </a>
+          </div>
+        </div><!--two-thirds-->
+      </div><!--grid-row-->
+    </form>
+
+  </main>
+  <!--END MAIN WRAPPER-->
+
+  <!--FOOTER-->
+  <footer class="govuk-footer " role="contentinfo">
+      <div class="govuk-width-container ">
+          <div class="govuk-footer__meta">
+              <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+                <span class="govuk-footer__licence-description">
+                    <div>
+                        <a href="guide.html">
+                          Prototype kit guide
+                        </a>
+                      </div>
+                </span>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!--HEADER-->
+  <div class="govuk-heading-l">Judicial Appointments Commission</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your feedback will help us improve it.
+      </span>
+    </p>
+  </div>
+  <a href="task-list" class="govuk-back-link">Back</a>
+  <!--END HEADER-->
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl" style="margin-bottom:10px; margin-top:30px;">
+            Create job description
+          </h1>
+          <span id="waste-hint" class="govuk-hint">
+            Select role being advertised
+          </span>
+
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Type of exercise
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Recorder
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    Circuit judge
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-3" name="type-of-exercise" type="radio"
+                    value="wales">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-3">
+                    Deputy district judge
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-3" name="type-of-exercise" type="radio"
+                    value="wales">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-3">
+                    District judge
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div>
+            <a href="#">
+              Add another
+            </a>
+          </div>
+          <br><br>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save
+          </button>
+
+        </div>
+      </div>
+    </form>
+  </main>
+  <!--END MAIN WRAPPER-->
+
+  <!--FOOTER-->
+  <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <span class="govuk-footer__licence-description">
+            <div>
+              <a href="guide.html">
+                Prototype kit guide
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--END FOOTER-->
+
+</div>
+
+{% endblock %}
