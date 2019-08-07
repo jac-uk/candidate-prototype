@@ -25,29 +25,22 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="confirm-email" method="post">
+    <form class="form" action="task-list" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Create an account
+            Submit info for selection day
           </h1>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Full name
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
+          <h2 class="govuk-heading-l">
+            Preferences
+          </h2>
 
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Are you or have you been known by any other name?
-              </legend>
+                Are you interested in salaried part-time working? </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -66,32 +59,8 @@ Add new exercise
             </fieldset>
           </div>
 
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Phone
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Email
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Confirm email
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Create an account
+            Save
           </button>
 
         </div>
@@ -102,12 +71,23 @@ Add new exercise
 
   <!--FOOTER-->
   <footer class="govuk-footer " role="contentinfo">
-    <a href="guide.html">
-      Prototype kit guide
-    </a>
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <span class="govuk-footer__licence-description">
+            <div>
+              <a href="guide.html">
+                Prototype kit guide
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!--END FOOTER-->
 
 </div>
-<!--END WIDTH-->
 
 {% endblock %}

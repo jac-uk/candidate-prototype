@@ -25,51 +25,25 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="confirm-email" method="post">
+    <form class="form" action="task-list" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Create an account
+            Submit info for selection day
           </h1>
+          <h2 class="govuk-heading-l">
+            References
+          </h2>
+          <p><a href="#">Guidance on choosing your two assessors</a></p>
 
+          <h2 class="govuk-heading-m">
+            Referee details
+          </h2>
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
               Full name
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
-          <!--RADIO GROUP-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Are you or have you been known by any other name?
-              </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    No
-                  </label>
-                </div>
-            </fieldset>
-          </div>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Phone
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
@@ -85,13 +59,40 @@ Add new exercise
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
-              Confirm email
+              Phone
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
 
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Type of reference </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Professional
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    Judicial
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <a href="#">Add another</a>
+          </div>
+
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Create an account
+            Save
           </button>
 
         </div>
@@ -102,12 +103,23 @@ Add new exercise
 
   <!--FOOTER-->
   <footer class="govuk-footer " role="contentinfo">
-    <a href="guide.html">
-      Prototype kit guide
-    </a>
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <span class="govuk-footer__licence-description">
+            <div>
+              <a href="guide.html">
+                Prototype kit guide
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
   </footer>
+  <!--END FOOTER-->
 
 </div>
-<!--END WIDTH-->
 
 {% endblock %}
