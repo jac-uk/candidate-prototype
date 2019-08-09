@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-Sign in
+Add new exercise
 {% endblock %}
 
 {% block content %}
@@ -25,37 +25,31 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-
     <form class="form" action="profile" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <h1 class="govuk-heading-xl">
-            Sign in
+            Take your qualifying tests
           </h1>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Enter your email address
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
+          <p>You'll need to take the <a href="https://www.judicialappointments.gov.uk/qualifying-tests">situational
+              judgment</a> and <a href="https://www.judicialappointments.gov.uk/qualifying-tests">critical analysis</a>
+            qualifying tests for the next stage of your application.</p>
+          <p>You can do the tests in any order, but each must be completed within a set time [or xx mins if we can pull
+            it through]. You'll be told what that
+            set time is when you start each test.</p>
+          <p>You can break for as long as you like between the tests, but both must be submitted by [closing date].</p>
+          </legend>
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Kellie: should this be 'continue', which leads to a 'check your email page'?
+            Take the situational judgment test
           </button>
-          <div>
-            <a href="#">
-              Forgotten your password?
-            </a>
-          </div>
-        </div>
-        <!--two-thirds-->
-      </div>
-      <!--grid-row-->
-    </form>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Take the critical analysis test
+          </button>
 
+        </div>
+      </div>
+    </form>
   </main>
   <!--END MAIN WRAPPER-->
 

@@ -25,37 +25,54 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-
-    <form class="form" action="profile" method="post">
+    <form class="form" action="eligibility-yes" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <h1 class="govuk-heading-xl">
-            Sign in
+            Check if you're eligible
           </h1>
-
-          <!--TEXT INPUT-->
+          <h2 class="govuk-heading-l">
+            Senior Circuit Judge, Resident Judge
+          </h2>
+          <!--CHECKBOX GROUP-->
+          <!--CHECKBOX GROUP-->
+          <!--CHECKBOX GROUP-->
+          <!--RADIO GROUP-->
           <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Enter your email address
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Since qualifying, have you gained a total of [XX] years' experience in a law-related activity?
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                This could be paid or unpaid law-related work
+              </span>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
           </div>
-
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Kellie: should this be 'continue', which leads to a 'check your email page'?
+            Continue
           </button>
-          <div>
-            <a href="#">
-              Forgotten your password?
-            </a>
-          </div>
+
         </div>
         <!--two-thirds-->
       </div>
       <!--grid-row-->
     </form>
-
   </main>
   <!--END MAIN WRAPPER-->
 
