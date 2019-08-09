@@ -1,0 +1,100 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!--HEADER-->
+  <div class="govuk-heading-l">Judicial Appointments Commission</div>
+  <hr class="govuk-section-break govuk-section-break--visible">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your feedback will help us improve it.
+      </span>
+    </p>
+  </div>
+  <!--END HEADER-->
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="eligibility-yes" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl">
+            Check if you're eligible
+          </h1>
+          <h2 class="govuk-heading-l">
+            Senior Circuit Judge, Resident Judge
+          </h2>
+          <!--CHECKBOX GROUP-->
+          <!--CHECKBOX GROUP-->
+          <!--CHECKBOX GROUP-->
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Since qualifying, have you gained a total of [XX] years' experience in a law-related activity?
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
+                This could be paid or unpaid law-related work
+              </span>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </div>
+        <!--two-thirds-->
+      </div>
+      <!--grid-row-->
+    </form>
+  </main>
+  <!--END MAIN WRAPPER-->
+
+  <!--FOOTER-->
+  <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <span class="govuk-footer__licence-description">
+            <div>
+              <a href="guide.html">
+                Prototype kit guide
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--END FOOTER-->
+
+</div>
+
+{% endblock %}
