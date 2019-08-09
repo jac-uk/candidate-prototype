@@ -8,20 +8,7 @@ Sign in
 
 <div class="govuk-width-container">
 
-  <!--HEADER-->
-  <div class="govuk-heading-l">Judicial Appointments Commission</div>
-  <hr class="govuk-section-break govuk-section-break--visible">
-  <div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your feedback will help us improve it.
-      </span>
-    </p>
-  </div>
-  <!--END HEADER-->
+  {% include "includes/header.html" %}
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
@@ -29,78 +16,59 @@ Sign in
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h1 class="govuk-heading-xl" style="margin-bottom: 0px;">
-            What's your date of birth?
-          </h1>
           <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s" </legend> <span id="waste-hint"
-                class="govuk-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                What's your date of birth?
+              </legend>
+              <span id="waste-hint" class="govuk-hint">
                 For example, 31 03 1980
-                </span>
-                <div class="govuk-date-input" id="passport-issued">
-                  <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                        Day
-                      </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                        name="passport-issued-day" type="number" pattern="[0-9]*">
-                    </div>
-                  </div>
-                  <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                        Month
-                      </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                        name="passport-issued-month" type="number" pattern="[0-9]*">
-                    </div>
-                  </div>
-                  <div class="govuk-date-input__item">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                        Year
-                      </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                        name="passport-issued-year" type="number" pattern="[0-9]*">
-                    </div>
+              </span>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                      name="passport-issued-day" type="number" pattern="[0-9]*">
                   </div>
                 </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                      name="passport-issued-year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
             </fieldset>
           </div>
 
+          <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
           </button>
 
+          <!--END MAIN WRAPPER-->
         </div>
-        <!--two-thirds-->
       </div>
-      <!--grid-row-->
     </form>
   </main>
-  <!--END MAIN WRAPPER-->
 
-  <!--FOOTER-->
-  <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
-        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-          <span class="govuk-footer__licence-description">
-            <div>
-              <a href="guide.html">
-                Prototype kit guide
-              </a>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--END FOOTER-->
+  {% include "includes/footer.html" %}
 
 </div>
 

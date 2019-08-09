@@ -8,20 +8,7 @@ Add new exercise
 
 <div class="govuk-width-container">
 
-  <!--HEADER-->
-  <div class="govuk-heading-l">Judicial Appointments Commission</div>
-  <hr class="govuk-section-break govuk-section-break--visible">
-  <div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your feedback will help us improve it.
-      </span>
-    </p>
-  </div>
-  <!--END HEADER-->
+  {% include "includes/header.html" %}
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
@@ -33,6 +20,7 @@ Add new exercise
           <h1 class="govuk-heading-xl">
             Your profile
           </h1>
+
           <p>Name <b>John Smith</b> <a href="#">Change</a></p>
           <p>Phone number <b>07 9999 9999</b> <a href="#">Change</a></p>
           <p>Email address <b>hello@example.com</b> <a href="#">Change</a></p>
@@ -41,20 +29,14 @@ Add new exercise
           <!--<p>Prep for QT <a href="qt-prep">Enter reasonable adjustments info</a></p>
           <p>After QT if selected <a href="task-list">Enter selection day info</a></p>-->
 
+          <!--END MAIN WRAPPER-->
         </div>
       </div>
     </form>
   </main>
-  <!--END MAIN WRAPPER-->
 
-  <!--FOOTER-->
-  <footer class="govuk-footer " role="contentinfo">
-    <a href="guide.html">
-      Prototype kit guide
-    </a>
-  </footer>
+  {% include "includes/footer.html" %}
 
 </div>
-<!--END WIDTH-->
 
 {% endblock %}

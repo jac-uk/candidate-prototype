@@ -8,20 +8,7 @@ Add new exercise
 
 <div class="govuk-width-container">
 
-  <!--HEADER-->
-  <div class="govuk-heading-l">Judicial Appointments Commission</div>
-  <hr class="govuk-section-break govuk-section-break--visible">
-  <div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your feedback will help us improve it.
-      </span>
-    </p>
-  </div>
-  <!--END HEADER-->
+  {% include "includes/header.html" %}
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
@@ -29,24 +16,16 @@ Add new exercise
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
+          <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
             Reasonable adjustments
           </h1>
+
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
                 Do you need any reasonable adjustments?
-                <span id="waste-hint" class="govuk-hint">
-                  >What does this mean?
-                  <p>[Kellie - txt appears under link when clicked]</p>
-                  <p>We’ll make reasonable adjustments to our selection process
-                    if you have a permanent or temporary disability, or
-                    a long-term health condition.
-                    <p>
-                      This so you're not put at a substantial disadvantage. We'll also consider adjustments for
-                      applicants who are ill at any stage during the selection process.</p>
-                </span>
               </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
@@ -66,34 +45,30 @@ Add new exercise
             </fieldset>
           </div>
 
+          <!--DETAILS-->
+          <span id="waste-hint" class="govuk-hint">
+            >What does this mean?
+            <p>[Kellie - txt appears under link when clicked]</p>
+            <p>We’ll make reasonable adjustments to our selection process
+              if you have a permanent or temporary disability, or
+              a long-term health condition.
+              <p>
+                This so you're not put at a substantial disadvantage. We'll also consider adjustments for
+                applicants who are ill at any stage during the selection process.</p>
+          </span>
+
+          <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
           </button>
 
+          <!--END MAIN WRAPPER-->
         </div>
       </div>
     </form>
   </main>
-  <!--END MAIN WRAPPER-->
 
-  <!--FOOTER-->
-  <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
-        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-          <span class="govuk-footer__licence-description">
-            <div>
-              <a href="guide.html">
-                Prototype kit guide
-              </a>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--END FOOTER-->
+  {% include "includes/footer.html" %}
 
 </div>
 

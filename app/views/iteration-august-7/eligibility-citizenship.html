@@ -8,20 +8,7 @@ Sign in
 
 <div class="govuk-width-container">
 
-  <!--HEADER-->
-  <div class="govuk-heading-l">Judicial Appointments Commission</div>
-  <hr class="govuk-section-break govuk-section-break--visible">
-  <div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your feedback will help us improve it.
-      </span>
-    </p>
-  </div>
-  <!--END HEADER-->
+  {% include "includes/header.html" %}
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
@@ -29,14 +16,11 @@ Sign in
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h1 class="govuk-heading-xl" style="margin-bottom: 0px;">
-            Which countries are you a citizen of?
-          </h1>
-
           <!--CHECKBOX GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                Which countries are you a citizen of?
               </legend>
               <span id="waste-hint" class="govuk-hint">
                 Select all that apply
@@ -70,36 +54,18 @@ Sign in
             </fieldset>
           </div>
 
+          <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
           </button>
 
+          <!--END MAIN WRAPPER-->
         </div>
-        <!--two-thirds-->
       </div>
-      <!--grid-row-->
     </form>
   </main>
-  <!--END MAIN WRAPPER-->
 
-  <!--FOOTER-->
-  <footer class="govuk-footer " role="contentinfo">
-    <div class="govuk-width-container ">
-      <div class="govuk-footer__meta">
-        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-
-          <span class="govuk-footer__licence-description">
-            <div>
-              <a href="guide.html">
-                Prototype kit guide
-              </a>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--END FOOTER-->
+  {% include "includes/footer.html" %}
 
 </div>
 

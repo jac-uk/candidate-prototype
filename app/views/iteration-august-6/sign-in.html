@@ -12,25 +12,33 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility-dob" method="post">
+    <form class="form" action="profile" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Check if you're eligible
+            Sign in
           </h1>
 
-          <h2 class="govuk-heading-l">
-            Senior Circuit Judge, Resident Judge</h2>
-          <p> To apply for this role, you must first check that you have all the relevant qualifications and experience.
-          </p>
-          <p>If it looks like you are eligible, you can then apply.</p>
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Check if you're eligible
+            Send magic link
           </button>
+
+          <div>
+            <a href="#">
+              Forgotten your password?
+            </a>
+          </div>
 
           <!--END MAIN WRAPPER-->
         </div>
