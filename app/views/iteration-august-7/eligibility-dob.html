@@ -25,60 +25,51 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility-yes" method="post">
+    <form class="form" action="eligibility-citizenship" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <h1 class="govuk-heading-xl">
-            Check if you're eligible
+            What's your date of birth?
           </h1>
-          <h2 class="govuk-heading-l">
-            Senior Circuit Judge, Resident Judge
-          </h2>
-
-          <!--CHECKBOX GROUP-->
           <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                What's your date of birth?</b>
-              </legend>
-              <span id="waste-hint" class="govuk-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s" </legend> <span id="waste-hint"
+                class="govuk-hint">
                 For example, 31 03 1980
-              </span>
-              <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                      Day
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
-                      name="passport-issued-day" type="number" pattern="[0-9]*">
+                </span>
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                        name="passport-issued-day" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
                   </div>
                 </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-              </div>
             </fieldset>
           </div>
-
-          <!--CHECKBOX GROUP-->
 
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
