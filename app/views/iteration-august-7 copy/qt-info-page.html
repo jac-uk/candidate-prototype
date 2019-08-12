@@ -1,0 +1,50 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="profile" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Take your qualifying tests
+          </h1>
+          <p>You'll need to take the <a href="https://www.judicialappointments.gov.uk/qualifying-tests">situational
+              judgment</a> and <a href="https://www.judicialappointments.gov.uk/qualifying-tests">critical analysis</a>
+            qualifying tests for the next stage of your application.</p>
+          <p>You can do the tests in any order, but each must be completed within a set time [or xx mins if we can pull
+            it through]. You'll be told what that
+            set time is when you start each test.</p>
+          <p>You can break for as long as you like between the tests, but both must be submitted by [closing date].</p>
+          </legend>
+
+          <!--BUTTONS-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Take the situational judgment test
+          </button>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Take the critical analysis test
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

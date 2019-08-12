@@ -1,0 +1,44 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!--PAGE TITLE-->
+        <h1 class="govuk-heading-xl">
+          Job advert
+        </h1>
+
+        <h2 class="govuk-heading-l">
+          Senior Circuit Judge, Resident Judge
+        </h2>
+
+        <p><strong>Launch date:</strong> 25 July, 2019 - 13:00</p>
+        <p><strong>Location:</strong> Teesside and Wales</p>
+        <p><strong>Salary:</strong> £151,497</p>
+
+        <!--LINK BUTTON-->
+        <div><a href="eligibility-start-page" class="govuk-button">Apply</a></div>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
