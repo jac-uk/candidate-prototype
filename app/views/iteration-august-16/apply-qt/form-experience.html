@@ -12,54 +12,38 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="task-list" method="post">
+    <form class="form" action="form-qualifications.html" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Your qualifications
+            Your legal experience
           </h1>
 
 
+          <p>Add details of all your paid or unpaid <a href>law-related activities</a>, starting with the most recent
+          </p>
 
-          <!--RADIO GROUP-->
+          <!--TEXT INPUT-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Where did you qualify as a solicitor?
-              </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    England and Wales
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    Scotland
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    Northern Ireland
-                  </label>
-                </div>
-            </fieldset>
+            <label class="govuk-label" for="event-name">
+              Job title or role
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Name of company, organisation or government department
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
 
           <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                When were you entered on the Roll?</b>
-              </legend>
+                Date started </legend>
               <span id="waste-hint" class="govuk-hint">
                 For example, 02 2017
               </span>
@@ -86,31 +70,11 @@ Add new exercise
             </fieldset>
           </div>
 
-          <h2 class="govuk-heading-l">
-            Qualifications
-          </h2>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              Qualification
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
-          <!--TEXT INPUT-->
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="event-name">
-              College or university
-            </label>
-            <input class="govuk-input" id="event-name" name="event-name" type="text">
-          </div>
-
           <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Qualification date </legend>
+                Date finished </legend>
               <span id="waste-hint" class="govuk-hint">
                 For example, 02 2017
               </span>
@@ -133,6 +97,20 @@ Add new exercise
                       name="passport-issued-year" type="number" pattern="[0-9]*">
                   </div>
                 </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              </legend>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                  I currently work in this job
+                </label>
               </div>
             </fieldset>
           </div>
@@ -141,9 +119,11 @@ Add new exercise
             <a href="#">Add another</a>
           </div>
 
+
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save
+            Save and continue
           </button>
 
           <!--END MAIN WRAPPER-->

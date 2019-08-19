@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-Add new exercise
+Sign in
 {% endblock %}
 
 {% block content %}
@@ -12,21 +12,23 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="profile" method="post">
+    <form class="form" action="eligibility-asc" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <!--PAGE TITLE-->
-          <h1 class="govuk-heading-xl">
-            Reasonable adjustments
+          <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
+            Do you have at least 7 years of experience as a solicitor?
           </h1>
-
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Do you need any reasonable adjustments?
+
               </legend>
+              <span id="waste-hint" class="govuk-hint">
+                You must have spent at least 20% of each year in <a href>law related activity</a> – this includes
+                paid and unpaid
+                work </span>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -44,18 +46,6 @@ Add new exercise
                 </div>
             </fieldset>
           </div>
-
-          <!--DETAILS-->
-          <span id="waste-hint" class="govuk-hint">
-            >What does this mean?
-            <p>[Kellie - txt appears under link when clicked]</p>
-            <p>We’ll make reasonable adjustments to our selection process
-              if you have a permanent or temporary disability, or
-              a long-term health condition.
-              <p>
-                This so you're not put at a substantial disadvantage. We'll also consider adjustments for
-                applicants who are ill at any stage during the selection process.</p>
-          </span>
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">

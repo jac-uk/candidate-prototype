@@ -12,58 +12,28 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="task-list" method="post">
+    <form class="form" action="confirm-email" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Submit info for selection day
+            Create an account
           </h1>
 
-          <h2 class="govuk-heading-l">
-            Competencies
-          </h2>
-          <p>Please refer to the guidance and competency framework on the JAC website before completing.</p>
-          <p>Maximum of 250 words for each competency.</p>
-          <p>
-            <b>Leadership</b><br>
-            <a href="#">Upload file</a>
-          </p>
-          <p>
-            <b>Exercising Judgement</b><br>
-            <a href="#">Upload file</a>
-          </p>
-          <p>
-            <b>Possessing and Building Knowledge</b><br>
-            <a href="#">Upload file</a>
-          </p>
-          <p>
-            <b>Assimilating and Clarifying Information
-            </b><br>
-            <a href="#">Upload file</a>
-          </p>
-          <p>
-            <b>Working and Communicating with Others
-            </b><br>
-            <a href="#">Upload file</a>
-          </p>
-          <p>
-            <b>Managing Work Effectively
-            </b><br>
-            <a href="#">Upload file</a>
-          </p>
-
-
-          <h2 class="govuk-heading-l">
-            Authorisations
-          </h2>
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              What's your full name?
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
 
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Do you currently have a Section 9(1) authorisation?
+                Have you ever changed your name?
               </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
@@ -83,9 +53,39 @@ Add new exercise
             </fieldset>
           </div>
 
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              What's your phone number?
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+              We'll only use this to contact you about your application.
+            </span>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              What's your email address?
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+              We'll only use this to contact you about your application.
+            </span>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Confirm your email address
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save
+            Create your account
           </button>
 
           <!--END MAIN WRAPPER-->
