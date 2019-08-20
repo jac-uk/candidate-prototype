@@ -12,7 +12,7 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility-where-qualify" method="post">
+    <form class="form" action="eligibility-pqe" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -20,9 +20,11 @@ Sign in
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                What's your profession?
+                Where did you qualify?
               </legend>
-
+              <span id="waste-hint" class="govuk-hint">
+                Can we skip this for and ask in PQE page?
+              </span>
               <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
@@ -34,30 +36,24 @@ Sign in
                       <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
                         value="england">
                       <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                        Advocate - Scotland
+                        England
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
                         value="scotland">
                       <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                        Barrister
+                        Wales
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
                         value="scotland">
                       <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                        Solicitor
-                      </label>
+                        Scotland or Northern Ireland and have Qualified Lawyers Transfer Scheme (QLTS)
+                        qualification </label>
                     </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                        value="scotland">
-                      <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                        CILEx
-                      </label>
-                    </div>
+
                 </fieldset>
               </div>
 
