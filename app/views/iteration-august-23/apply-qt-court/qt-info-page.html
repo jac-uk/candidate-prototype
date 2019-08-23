@@ -1,0 +1,81 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="sj-test-page" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Before you start
+          </h1>
+          <p>You must agree to the confidentiality terms before you can take the qualifying tests.</p>
+
+          <p>I understand and confirm that:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>I'll keep all aspects of the selection process confidential, including reference texts
+            <li>JAC will refer all suspected confidentiality breaches to regulatory bodies, including the Bar Standards
+              Board, the Solicitors Regulatory Authority, CILEx Regulation and the Judicial Conduct Investigations
+              Office</li>
+            </li>
+            <li>JAC might disqualify candidates from this and future exercises if there's evidience confidentiality
+              has been breached
+            </li>
+          </ul>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    I agree to the confidentiality terms
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!--BUTTONS-->
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Take the situational judgment test
+      </button>
+      <br>
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Take the critical analysis test
+      </button>
+
+      <!--END MAIN WRAPPER-->
+</div>
+</div>
+</form>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

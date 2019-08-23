@@ -1,0 +1,47 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="sj-test-page.html" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            NEW WEB PAGE
+          </h1>
+
+
+          <p>Each question will present a situation that you might face in the role you’ve applied for.</p>
+
+          <p>In each situation ,there's an issue or problem you need to resolve, with [5] possible answers. You’ll need
+            to tick a box for the best and worst answer in each case. There are no marks for next best or next worst
+            answer.</p>
+
+          <p>You’ll be assessed on your reading of each situation and ability to judge how appropriate the possible
+            answers are, not on knowledge of rules or procedures.</p>
+
+          <!--BUTTONS-->
+
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

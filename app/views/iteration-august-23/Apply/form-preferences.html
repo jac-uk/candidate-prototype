@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-Sign in
+Add new exercise
 {% endblock %}
 
 {% block content %}
@@ -12,23 +12,24 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility-asc" method="post">
+    <form class="form" action="task-list" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
-          <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
-            Do you have at least x years of legal experience?
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Submit info for selection day
           </h1>
+
+          <h2 class="govuk-heading-l">
+            Preferences
+          </h2>
+
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-
-              </legend>
-              <span id="waste-hint" class="govuk-hint">
-                You must have spent at least 20% of each year in <a href>law related activity</a> – this includes
-                paid and unpaid
-                work </span>
+                Are you interested in salaried part-time working? </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -49,7 +50,7 @@ Sign in
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Continue
+            Save
           </button>
 
           <!--END MAIN WRAPPER-->
