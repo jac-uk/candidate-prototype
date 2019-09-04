@@ -1,0 +1,53 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="confirm-email" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Pass email
+          </h1>
+          <p>Dear Jane Smith</p>
+
+          <p><strong>106 District judge</strong></p>
+
+          <p>You've passed your qualifying tests. You can see details of the aggregated pass mark at
+            judicialappointments.gov.uk/106-qt-pass.</p>
+
+          <p><strong>What happens next</strong></p>
+          <p>Sign into your account to complete the second stage of your applicaiton.</P>
+
+          <p class="govuk-body">You'll need to give details about your:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li> professional qualifications and experience</li>
+            <li>self-assessment competencies</li>
+            <li>JAC relationships </li>
+            <li>availability for selection day</li>
+          </ul>
+          <a href="sign-in">Sign in</a>
+
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
