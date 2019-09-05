@@ -12,7 +12,7 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="eligibility-asc-court" method="post">
+    <form class="form" action="eligibility-pqe" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -20,35 +20,44 @@ Sign in
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h1 class="govuk-fieldset__heading">
-                  Where did you qualify?
-                </h1>
+                Where did you qualify?
               </legend>
               <span id="waste-hint" class="govuk-hint">
-                Select all that apply
+                Can we skip this for and ask in PQE page?
               </span>
-              <div class="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    England
-                  </label>
-                </div>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
 
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Wales
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Other
-                  </label>
-                </div>
+                  </legend>
 
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                        value="england">
+                      <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                        England
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                        value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                        Wales
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                        value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                        Scotland or Northern Ireland and have Qualified Lawyers Transfer Scheme (QLTS)
+                        qualification </label>
+                    </div>
+
+                </fieldset>
               </div>
+
+
             </fieldset>
           </div>
 

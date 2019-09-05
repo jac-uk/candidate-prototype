@@ -19,68 +19,39 @@ Sign in
           <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
             Character and history
           </h1>
-          <p class="govuk-body">For each section, answer 'Yes' if any of the questions apply to you. If none is
-            relevant, answer 'No'.</p>
-
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                How we assess character
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              <p> If you're
-                shortlisted to the final selection stages, we'll look at all the circumstances of any issues that
-                could
-                affect your
-                good
-                character.</p>
-              <p>You should also read the <a href="https://www.judicialappointments.gov.uk/good-character">
-                  character guide</a> for more information.</p>
-            </div>
-          </details>
+          <br>
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Have you been declared bankrupt in the last 5 years?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
 
 
           <!--RADIO GROUP-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Criminal offences </legend>
-              <p class="govuk-body">Have you:</p>
-              <ul class="govuk-list govuk-list--bullet">
-                <li>ever been sentenced to time in prison?</li>
-                <li>been cautioned for a criminal offence in the past 5 years, or convicted of a criminal offence in
-                  the past 11 years?</li>
-              </ul>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
-                    No
-                  </label>
-                </div>
-            </fieldset>
-          </div>
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Motoring offences </legend>
-              <p class="govuk-body">Have you:</p>
-              <ul class="govuk-list govuk-list--bullet">
-                <li>ever been convicted of driving under the influence of alcohol or drugs</li>
-                <li>been disqualified from driving in the past 3 years</li>
-                <li>more than 7 points on your licence</li>
-                <li>6 or more points on your licence for one single offence </li>
-
-              </ul>
+                Have you filed late tax returns, been fined by HMRC or had other financial difficulties
+                more than 3 times in the last 5 years?
+              </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -102,13 +73,9 @@ Sign in
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Financial considerations </legend>
-              <p class="govuk-body">Are you:</p>
-              <ul class="govuk-list govuk-list--bullet">
-                <li>currently going through bankruptcy, or been discharged from bankruptcy in the past 4 years</li>
-                <li>subject to an Individual Voluntary Arrangement (IVA)</li>
-
-              </ul>
+                Have you had a criminal conviction in the last 10 years or a criminal caution in
+                the last 5 years?
+              </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -130,11 +97,9 @@ Sign in
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Professional conduct</legend>
-              <p class="govuk-body">Are you the subject of a live professional conduct or negligence investigation?
-              </p>
-
-
+                Have you had a motoring offence involving drink or drug driving, or
+                driving while using a mobile in the last 10 years?
+              </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
@@ -150,34 +115,119 @@ Sign in
                     No
                   </label>
                 </div>
-              </div>
-
-
+            </fieldset>
           </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Have you been disqualified from driving in the last 5 years?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Do you have any motoring offences and more than 6 points on your
+                licence?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Do you have any motoring offences and more than 6 points on your
+                licence?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Are you the subject of a live professional conduct or negligence investigation?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    No
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+
+
+
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Check if you're eligible
+          </button>
+
+          <!--END MAIN WRAPPER-->
         </div>
-        </details>
-        </fieldset>
       </div>
+    </form>
+  </main>
 
-
-
-
-
-
-
-
-      <!--BUTTON-->
-      <button type="submit" class="govuk-button" data-module="govuk-button">
-        Check if you're eligible
-      </button>
-
-      <!--END MAIN WRAPPER-->
-</div>
-</div>
-</form>
-</main>
-
-{% include "includes/footer.html" %}
+  {% include "includes/footer.html" %}
 
 </div>
 
