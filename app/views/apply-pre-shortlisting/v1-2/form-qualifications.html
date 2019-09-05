@@ -1,0 +1,203 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Your qualifications
+          </h1>
+
+          <!--CONDITIONAL CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Qualifications
+                </h1>
+              </legend>
+              <span id="citizenship-conditional-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Advocate – enrolled with the Scottish bar
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    Barrister
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                    value="email" data-aria-controls="conditional-citizenship-conditional">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                    CILEx fellow (this might be called Fellow ILEX)
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
+                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                    Solicitor
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
+                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                    Chartered surveyor (RICS)
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <!--RADIO GROUP
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Where did you qualify as a solicitor?
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                    England and Wales
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    Scotland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                    Northern Ireland
+                  </label>
+                </div>
+            </fieldset>
+          </div>-->
+
+          <!--DATE-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                When were you entered on the Roll?</b>
+              </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                      name="passport-issued-year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <h2 class="govuk-heading-l">
+            Qualifications
+          </h2>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Qualification
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              College or university
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--DATE-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Qualification date </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                      name="passport-issued-year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <a href="#">Add another</a>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
