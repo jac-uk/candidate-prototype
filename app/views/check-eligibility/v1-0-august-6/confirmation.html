@@ -1,0 +1,40 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!--CONFIRMATION BOX-->
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">You're eligible to apply</h1>
+        </div>
+
+        <!--BUTTONS-->
+        <p>
+          <a href="#" class="govuk-button">Sign in</a>
+        </p>
+        <p class="govuk-body">
+          <a href="#">Create an account</a>
+        </p>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

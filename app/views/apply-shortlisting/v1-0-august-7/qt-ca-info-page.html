@@ -1,0 +1,43 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!--PAGE TITLE-->
+        <h1 class="govuk-heading-xl">
+          Critical analysis test
+        </h1>
+        <p>You’ll be asked to evaluate [judgement name and link].</p>
+
+        <p>You should also print it out – you’ll need to refer to it throughout.</p>
+
+        <p>You’ll have [x] minutes to answer [x] multiple choice questions about this text.</p>
+
+        <p>For each question, you’ll need to decide which is the most accurate answer, with [x] possible answers for
+          each.</p>
+
+        <p>You’ll be assessed on your ability to analyse information, not on your legal or specialist knowledge.
+        </p>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="qt-test-page" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Take your qualifying tests
+          </h1>
+          <p>The <a href="qt-sj-info-page.html" target="_blank">situational
+              judgement</a> and <a href="qt-ca-info-page.html" target="_blank">critical analysis</a>
+            qualifying tests are the next stage of your application.</p>
+          <p>You can take them anytime before [closing time] on [closing date].</p>
+          <p>You can take them in any order, but each must be completed within [xx] mins. </p>
+          <p>You can break for as long as you like between the tests.
+          </p>
+
+          <h2 class="govuk-heading-l">
+            Reasonable adjustments
+          </h2>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Do you need any reasonable adjustments
+              </legend>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-how-contacted-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-heading-m" for="contact-by-email" style="margin-bottom:5px;">
+                      Add
+                      information about your condition and what adjustments you’d like. You can also <a
+                        href=“https://www.judicialappointments.gov.uk/contact-us“>call us</a> if you prefer. </label>
+                        <textarea class="govuk-textarea" id="contact-by-email" name="contact-by-email" rows="5"
+                        aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio"
+                    value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                    No
+                  </label>
+
+                </div>
+              </div>
+
+
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What are reasonable adjustments?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  We’ll make reasonable adjustments to our selection process
+                  if you have a permanent or temporary disability, or
+                  a long-term health condition.</p>
+                  <p>This so you're not put at a substantial disadvantage. We'll also consider adjustments for
+                    candidates who are ill at any stage during the selection process.</p>
+                </div>
+              </details>
+            </fieldset>
+          </div>
+
+
+
+          <!--BUTTONS-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Take the situational judgement test
+          </button>
+          <br>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Take the critical analysis test
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
