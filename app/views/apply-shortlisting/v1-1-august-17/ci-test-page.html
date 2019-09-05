@@ -1,0 +1,40 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="ci-confirmation" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Critical analysis test
+          </h1>
+
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Submit
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

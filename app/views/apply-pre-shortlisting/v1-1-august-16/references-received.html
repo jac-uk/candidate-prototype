@@ -1,0 +1,63 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!--CONFIRMATION BOX-->
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">Independent assessors added</h1>
+          <p>
+            <font color="#FFFFFF">We'll now contact your nominated referees.</font>
+          </p>
+        </div>
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          <p>You need to take 2 qualifying tests for the next stage of your application.</p>
+          <p>These are:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the <a href="situational-judgement-info-page.html">situational
+                judgement</a> test</li>
+            <li>the <a href="critical-analysis-info-page.html">critical analysis</a> test
+            </li>
+          </ul>
+
+          <p>You can take the tests now, or at anytime before [closing time] on [closing date]. You'll need to sign back
+            into your account if you want to take the tests later.</p>
+        </p>
+        <p>You can take them in any order, but each must be completed within [xx] mins. You can break for as long as
+          you like between the tests.
+        </p>
+        <p>If you need <a href="reasonable-adjustments.html">reasonable adjustments</a> to take the tests, email
+          contact@jac.gov.uk</p>
+
+
+        <!--BUTTONS-->
+        <div><a href="qt-info-page.html" class="govuk-button">Take qualifying tests</a>
+        </div>
+        <p><a href>Sign out</a></p>
+
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
