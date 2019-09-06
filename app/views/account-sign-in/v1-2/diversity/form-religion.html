@@ -17,7 +17,7 @@ Sign in
         <div class="govuk-grid-column-two-thirds">
 
           <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
-            What is your religion or belief? [KELLIE WORKING ON THIS PAGE NOW]
+            What is your religion or belief?
           </h1>
 
           <!--RADIO GROUP-->
@@ -26,24 +26,77 @@ Sign in
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
               </legend>
-              <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="disability-0" name="disability" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="disability-0">
+                  <input class="govuk-radios__input" id="religion-0" name="religion" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="religion-0">
                     Prefer not to say
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="disability-1" name="disability" type="radio" value="england">
-                  <label class="govuk-label govuk-radios__label" for="disability-1">
-                    Yes
+                  <input class="govuk-radios__input" id="religion-1" name="religion" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="religion-1">
+                    No religion
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="disability-2" name="disability" type="radio" value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="disability-2">
-                    No
+                  <input class="govuk-radios__input" id="religion-2" name="religion" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="religion-2">
+                    Atheist
                   </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-3" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-3">
+                    Buddhist
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-4" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-4">
+                    Christian
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-5" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-5">
+                    Hindu
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-6" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-6">
+                    Jewish
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-7" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-7">
+                    Muslim
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-8" name="religion" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="religion-8">
+                    Sikh
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="religion-9-conditional" name="religion" type="radio"
+                    value="england" data-aria-controls="conditional-religion-9-conditional">
+                  <label class="govuk-label govuk-radios__label" for="religion-9-conditional">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-religion-9-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="religion-other">
+                      Religion or belief
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="religion-other" name="religion-other"
+                      type="email" spellcheck="false">
+                  </div>
                 </div>
               </div>
             </fieldset>
