@@ -1,0 +1,89 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="form-disability" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
+            How would you describe your sexual orientation?
+          </h1>
+
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-0" name="orientation" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="orientation-0">
+                    Prefer not to say
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-1" name="orientation" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="orientation-1">
+                    Bisexual
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-2" name="orientation" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="orientation-2">
+                    Gay man
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-3" name="orientation" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="orientation-3">
+                    Gay woman/lesbian
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-4" name="orientation" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="orientation-4">
+                    Heterosexual/straight
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="orientation-5" name="orientation" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="orientation-5">
+                    Other
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

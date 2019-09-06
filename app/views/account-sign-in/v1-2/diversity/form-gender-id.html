@@ -1,0 +1,67 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="form-orientation" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-xl" style="margin-bottom:0px;">
+            Is your gender identity the same as the gender you were assigned at birth?
+          </h1>
+
+          <!--RADIO GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-id-0" name="gender-id" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="gender-id-0">
+                    Prefer not to say
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-id-1" name="gender-id" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="gender-id-1">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-id-2" name="gender-id" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="gender-id-2">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
