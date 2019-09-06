@@ -12,17 +12,42 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="form-experience-saved" method="post">
+    <form class="form" action="task-list-pre" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
           <h1 class="govuk-heading-xl">
-            Legal experience
+            Experience
           </h1>
 
-          <p class="govuk-body-l">Give details of your legal work experience, starting with your most
-            recent role.</p>
+          <p class="govuk-body-l">List your employment history, including any judicial appointments, starting with your
+            most recent job.</p>
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">April 2015 to March 2016</th>
+                <td class="govuk-table__cell">Senior Circuit Judge</td>
+                <td class="govuk-table__cell"><a href="#">Remove</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">August 2014 to January 2015</th>
+                <td class="govuk-table__cell">Circuit Judge</td>
+                <td class="govuk-table__cell"><a href="#">Remove</a></td>
+
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">February 2014 to December 2015</th>
+                <td class="govuk-table__cell">High Court Judge</td>
+                <td class="govuk-table__cell"><a href="#">Remove</a></td>
+              </tr>
+            </tbody>
+          </table>
+
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
@@ -36,23 +61,13 @@ Add new exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked>
+                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
                 <label class="govuk-label govuk-checkboxes__label" for="waste-2">
                   I am currently working in this role
                 </label>
               </div>
             </fieldset>
           </div>
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Help with 'legal work experience'
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              lorem ipsum
-            </div>
-          </details>
 
           <!--DATE-->
           <div class="govuk-form-group">
@@ -82,11 +97,11 @@ Add new exercise
             </fieldset>
           </div>
 
-          <!--DATE
+          <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                To </legend>
+                End date </legend>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input__item">
                   <div class="govuk-form-group">
@@ -108,9 +123,7 @@ Add new exercise
                 </div>
               </div>
             </fieldset>
-          </div>-->
-
-
+          </div>
 
           <div class="govuk-form-group">
             <p class="govuk-body">
