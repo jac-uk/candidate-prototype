@@ -1,0 +1,116 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-width-container">
+          <form class="form" action="eligibility-yes" method="post">
+
+            <h1 class="govuk-heading-xl">Check if you're eligible</h1>
+
+            <p class="govuk-body">Answer these questions to check you meet all the eligibility requirements for this
+              role. It's not a guarantee you're eligible – it's to give you an idea of whether you
+              might be.</p>
+            <p>If you cannot meet all the requirements, you can still apply but it could mean you’re unlikely to be
+              offered a position.
+            </p>
+
+            <h2 class="govuk-heading-l">Citizenship</h2>
+
+            <p> I'm a citizen of the UK, the Republic of Ireland or another Commonwealth country.
+            </p>
+            <div class="govuk-form-group">
+
+              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Yes </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <!--MAIN WRAPPER
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      I'm a citizen of the UK, the Republic of Ireland or another Commonwealth country.
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                      I'm aged 65 or under.
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      I have at least 5 years of <a
+                        href="https://www.judicialappointments.gov.uk/eligibility-tribunals">post-qualification
+                        law-related work
+                        experience</a>.
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      I do not have any significant criminal, driving, financial convictions or proven professional
+                      complaints against you. (Read our <a
+                        href="https://www.judicialappointments.gov.uk/good-character">character guidance</a> for more
+                      information.)
+
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      I have sat as a judge in a salaried or fee-paid capacity. For fee-paid judges at the point of
+                      application, the length of directly relevant previous judicial experience should a minimum 30
+                      completed sitting days, not including days taken for training purposes or sickness, since
+                      appointment in a fee
+                      paid capacity.
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            -->
+
+
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+
+
+  </main>
+</div>
+
+<!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
