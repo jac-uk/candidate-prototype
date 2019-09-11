@@ -17,9 +17,8 @@ Add new exercise
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
-          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
-            Coroner
-            & Attorney</span>
+          <span class="govuk-caption-xl">091 Judge of the First-tier Tribunal for England and Wales</span>
+
           <br>
           <h1 class="govuk-heading-xl">
             Legal experience
@@ -28,10 +27,28 @@ Add new exercise
           <p class="govuk-body-l">Give details of your post-qualification legal work experience, starting with your most
             recent role.</p>
 
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help with 'legal work experience'
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              lorem ipsum
+            </div>
+          </details>
+
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label-input" for="event-name">
               Job title
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Organisation or business name
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
@@ -47,16 +64,7 @@ Add new exercise
               </div>
             </fieldset>
           </div>
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Help with 'legal work experience'
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              lorem ipsum
-            </div>
-          </details>
+
 
           <!--DATE-->
           <div class="govuk-form-group">
@@ -96,6 +104,17 @@ Add new exercise
             </fieldset>
           </div>
 
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="more-detail">
+              About your role
+            </label>
+            <span id="more-detail-hint" class="govuk-hint">
+              include blah blah
+            </span>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8"
+              aria-describedby="more-detail-hint"></textarea>
+          </div>
+
           <!--DATE
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
@@ -128,7 +147,7 @@ Add new exercise
 
           <div class="govuk-form-group">
             <p class="govuk-body">
-              <a href="#">Add another role</a>
+              <a href="form-experience-saved.html">Add another role</a>
             </p>
           </div>
 

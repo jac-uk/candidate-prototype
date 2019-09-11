@@ -17,125 +17,110 @@ Add new exercise
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
-          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
-            Coroner
-            & Attorney</span>
+          <span class="govuk-caption-xl">091 Judge of the First-tier Tribunal for England and Wales</span>
+          <br>
           <h1 class="govuk-heading-xl">
             Qualifications
           </h1>
 
-          <!--CONDITIONAL CHECKBOX GROUP-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
 
-              </legend>
-              <span id="citizenship-conditional-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-citizenship-conditional">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    Advocate – enrolled with the Scottish bar
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-citizenship-conditional">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    Barrister
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
-                    value="email" data-aria-controls="conditional-citizenship-conditional">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                    CILEx fellow – a fellow of the Chartered Institutes of Legal Executives
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox"
-                    value="phone" data-aria-controls="conditional-citizenship-conditional-2">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
-                    Solicitor
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox"
-                    value="text message" data-aria-controls="conditional-citizenship-conditional-3">
-                  <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
-                    Other
-                  </label>
-                </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+                    What are you qualified as?
+
+                  </legend>
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="advocate" name="where-do-you-live" type="radio"
+                        value="england">
+                      <label class="govuk-label govuk-radios__label" for="advocate">
+                        Advocate – Scotland
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="barrister" name="where-do-you-live" type="radio"
+                        value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="barrister">
+                        Barrister
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="cilex" name="where-do-you-live" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="cilex">
+                        CILEx – fellow of the Chartered Institute of Legal Executives
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="solicitor" name="where-do-you-live" type="radio"
+                        value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="solicitor">
+                        Solicitor
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
             </fieldset>
           </div>
 
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h1 class="govuk-fieldset__heading">
-                  Where did you qualify?
-                </h1>
-              </legend>
-              <span id="waste-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
-              <div class="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    England
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Where did you qualify </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    England or Wales
                   </label>
                 </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    Northern Ireland
-                  </label>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                      value="email" data-aria-controls="conditional-how-contacted-conditional">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                      Northern Ireland or Scotland
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                    id="conditional-how-contacted-conditional">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Have passed the Qualified Lawyers Transfer Scheme?
+                      </label>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
+                          type="radio" value="scotland">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          Yes
+                        </label>
+
+                      </div>
+
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
+                          type="radio" value="scotland">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          No
+                        </label>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Scotland
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    Wales
-                  </label>
-                </div>
-              </div>
             </fieldset>
           </div>
 
-
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                <h1 class="govuk-fieldset__heading">
-                  If you qualified in Northern Ireland or Scotland, have passed the Qualified Lawyers Transfer Scheme?
-                </h1>
-              </legend>
-
-              <div class="govuk-radios govuk-radios--inline">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="changed-name">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    No
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+            <p class="govuk-body">
+              <a href="#">Add another qualification</a>
+            </p>
           </div>
 
           <!--RADIO GROUP
@@ -248,7 +233,7 @@ Add new exercise
               <a href="#">Add another</a>
           </div>
           </p>
--->
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Save
