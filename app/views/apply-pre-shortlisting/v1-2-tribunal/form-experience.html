@@ -1,0 +1,174 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="form-experience-saved" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">091 Judge of the First-tier Tribunal for England and Wales</span>
+
+          <br>
+          <h1 class="govuk-heading-xl">
+            Legal experience
+          </h1>
+
+          <p class="govuk-body-l">Give details of your post-qualification legal work experience.</p>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help with 'legal work experience'
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              lorem ipsum
+            </div>
+          </details>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Job title
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Organisation or business name
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--CHECKBOX GROUP-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                  I am currently working in this role
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <!--DATE-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Start date </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                        name="passport-issued-day" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="more-detail">
+              About your role
+            </label>
+            <span id="more-detail-hint" class="govuk-hint">
+              include blah blah
+            </span>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8"
+              aria-describedby="more-detail-hint"></textarea>
+          </div>
+
+          <!--DATE
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                To </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                      name="passport-issued-year" type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>-->
+
+
+
+          <div class="govuk-form-group">
+            <p class="govuk-body">
+              <a href="form-experience-saved.html">Add another role</a>
+            </p>
+          </div>
+
+          <!--
+          <div class="govuk-form-group">
+            <p>Gaps in employment <br>[do we omit this and calculate it using the above, then ask about it when
+              revelant?]</p>
+          </div>-->
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
