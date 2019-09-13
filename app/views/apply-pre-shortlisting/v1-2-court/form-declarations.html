@@ -27,32 +27,53 @@ Add new exercise
           </h1>
 
           <!--RADIO GROUP-->
+
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
+            <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Are you related to, or known to any of the JAC Commissioners?
+                Are you related or known to any of the <a
+                  href="https://www.judicialappointments.gov.uk/commissioners">JAC
+                  commissioners</a>?
               </legend>
-              <div class="govuk-radios">
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise" name="type-of-exercise" type="radio"
-                    value="england">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise">
+                  <input class="govuk-radios__input" id="contacted-conditional-3" name="contacted" type="radio"
+                    value="text" data-aria-controls="conditional-contacted-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="contacted-conditional-3">
                     Yes
                   </label>
                 </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-contacted-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="contact-by-text">
+                      Commissioner's name
+                    </label>
+
+                    <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-text" name="contact-by-text"
+                      type="tel">
+
+                  </div>
+                  <br>
+                  <a href="#">Add another</a>
+                </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="type-of-exercise-2" name="type-of-exercise" type="radio"
-                    value="scotland">
-                  <label class="govuk-label govuk-radios__label" for="type-of-exercise-2">
+                  <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
+                    value="phone" data-aria-controls="conditional-contacted-conditional-2">
+                  <label class="govuk-label govuk-radios__label" for="contacted-conditional-2">
                     No
                   </label>
                 </div>
             </fieldset>
           </div>
 
+
+
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save
+            Continue
           </button>
 
           <!--END MAIN WRAPPER-->
