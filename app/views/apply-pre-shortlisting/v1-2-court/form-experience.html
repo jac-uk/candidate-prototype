@@ -24,21 +24,10 @@ Add new exercise
 
           <br>
           <h1 class="govuk-heading-xl">
-            Work experience
+            Post-qualification legal work experience
           </h1>
 
-          <p class="govuk-body">Give details of your post-qualification legal work experience.</p>
 
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Help with 'legal work experience'
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              lorem ipsum
-            </div>
-          </details>
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
@@ -106,16 +95,97 @@ Add new exercise
             </fieldset>
           </div>
 
+
+
           <div class="govuk-form-group">
-            <label class="govuk-label-input" for="event-name">
-              Law-related activities in this role
-            </label>
-            <span id="more-detail-hint" class="govuk-hint">
-              lorem ipsum
-            </span>
-            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8"
-              aria-describedby="more-detail-hint"></textarea>
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <label class="govuk-label-input" for="event-name">
+                What law-related tasks did you do in this role?
+              </label>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Help with 'law-related tasks'
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  lorem ipsum
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Advising on the application of the law </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Arbitrator
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Assisting in resolution proceedings
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Drafting documents that affect a person's rights or obligations on the application of the law
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Judicial functions in courts or tribunals </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Lawyer
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Mediating in resolution proceedings, or issues that could result in proceedings
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Teaching or researching law
+                </div>
+
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                      value="email" data-aria-controls="conditional-citizenship-conditional">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                      Other law-related tasks
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                    id="conditional-citizenship-conditional">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Describe task.
+                      </label>
+                      <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email"
+                        type="email" spellcheck="false">
+                    </div>
+
+
+
+            </fieldset>
           </div>
+
 
           <div class="govuk-form-group">
             <p class="govuk-body">
