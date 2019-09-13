@@ -12,30 +12,18 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="form-experience-saved" method="post">
+    <form class="form" action="task-list-pre" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
           <!--PAGE TITLE-->
-          <span class="govuk-caption-xl">091 Judge of the First-tier Tribunal for England and Wales</span>
+          <span class="govuk-caption-xl">114 Judge of the First-tier Tribunal for England and Wales</span>
+
 
           <br>
           <h1 class="govuk-heading-xl">
-            Legal experience
+            Legal work experience
           </h1>
-
-          <p class="govuk-body-l">Give details of your post-qualification legal work experience.</p>
-
-          <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Help with 'legal work experience'
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              lorem ipsum
-            </div>
-          </details>
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
@@ -103,45 +91,96 @@ Add new exercise
             </fieldset>
           </div>
 
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="more-detail">
-              About your role
-            </label>
-            <span id="more-detail-hint" class="govuk-hint">
-              include blah blah
-            </span>
-            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8"
-              aria-describedby="more-detail-hint"></textarea>
-          </div>
 
-          <!--DATE
+
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                To </legend>
-              <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
-                  </div>
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <label class="govuk-label-input" for="event-name">
+                What law-related tasks did you do in this role?
+              </label>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Help with 'law-related tasks'
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  lorem ipsum
                 </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="number" pattern="[0-9]*">
-                  </div>
+              </details>
+
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Advising on the application of the law </label>
                 </div>
-              </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Arbitrator
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Assisting in resolution proceedings
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Drafting documents that affect a person's rights or obligations on the application of the law
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Judicial functions in courts or tribunals </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Lawyer
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Mediating in resolution proceedings, or issues that could result in proceedings
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Teaching or researching law
+                </div>
+
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                      value="email" data-aria-controls="conditional-citizenship-conditional">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                      Other law-related tasks
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                    id="conditional-citizenship-conditional">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Describe task.
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                        aria-describedby="more-detail-hint"></textarea>
+                    </div>
+
+
+
             </fieldset>
-          </div>-->
-
+          </div>
 
 
           <div class="govuk-form-group">
@@ -150,15 +189,60 @@ Add new exercise
             </p>
           </div>
 
-          <!--
+
+
+
+
           <div class="govuk-form-group">
-            <p>Gaps in employment <br>[do we omit this and calculate it using the above, then ask about it when
-              revelant?]</p>
-          </div>-->
+            <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
+              <label class="govuk-label-input" for="event-name">
+                Additional eligibility requirements
+              </label>
+              </legend>
+              <span id="with-hint-hint" class="govuk-hint">
+                You need experience of criminal law and procedure in the Crown Court and/or the Court of Appeal,
+                Criminal Division that includes sufficient directly relevant previous judicial experience.
+              </span>
+              <p class="govuk-body">Have you sat for a judge for at least 30 days?</p>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
+
+
+
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
+                    value="phone" data-aria-controls="conditional-contacted-conditional-2">
+                  <label class="govuk-label govuk-radios__label" for="contacted-conditional-2">
+                    Yes
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="contacted-conditional-3" name="contacted" type="radio"
+                    value="text" data-aria-controls="conditional-contacted-conditional-3">
+                  <label class="govuk-label govuk-radios__label" for="contacted-conditional-3">
+                    No
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-contacted-conditional-3">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="contact-by-text">
+                      Explain your relevant judicial experience.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save
+            Continue
           </button>
 
           <!--END MAIN WRAPPER-->
