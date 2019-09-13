@@ -1,0 +1,148 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="form-sent" method="post">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+
+
+          <!--PAGE TITLE-->
+
+
+          <span class="govuk-caption-xl"><span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the
+              Crown Office and Queen’s Coroner
+              &
+              Attorney</span>
+            <br>
+            <h1 class="govuk-heading-xl">Your application</h1>
+
+
+            <!--TABLE-->
+
+            <table class="govuk-table">
+
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"><a href="form-personal">Personal details</a></th>
+                <th scope="col" class="govuk-table__header">Added</th>
+              </tr>
+
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="form-qualifications">Qualifications</a></th>
+                <td class="govuk-table__cell">Not added</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="form-experience">Experience</a></th>
+                <td class="govuk-table__cell">Not added</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="form-competencies">Self-assessment competencies</a>
+                </th>
+                <td class="govuk-table__cell">Not added</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="form-independent-assessors"> Independent
+                    assessors</a>
+                </th>
+                <td class="govuk-table__cell">Not added</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="form-declarations"> Conflict of interest</a></th>
+                <td class="govuk-table__cell">Not added</td>
+              </tr>
+
+              </tbody>
+            </table>
+
+
+
+
+
+            <!--TASK LIST
+        <ol class="app-task-list">
+          <li>
+            <ul class="app-task-list__items" style="padding-left:0px;">
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-personal" aria-describedby="eligibility-completed">
+                  Personal details
+                </a>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-qualifications" aria-describedby="eligibility-completed">
+                  Qualifications
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-experience" aria-describedby="eligibility-completed">
+                  Experience
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-competencies" aria-describedby="eligibility-completed">
+                  Self-assessment competencies
+                </a>
+              </li>
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-independent-assessors"
+                  aria-describedby="eligibility-completed">
+                  Independent assessors
+                </a>
+              </li>
+
+              <li class="app-task-list__item">
+                  <a class="app-task-list__task-name" href="form-declarations"
+                    aria-describedby="eligibility-completed">
+                    Conflict of interest
+
+                  </a>
+                </li>
+
+              
+              
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-preferences" aria-describedby="eligibility-completed">
+                  Working patterns
+                </a>
+              </li>
+            
+              <li class="app-task-list__item">
+                <a class="app-task-list__task-name" href="form-declarations" aria-describedby="eligibility-completed">
+                  Conflict of interest
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <!--BUTTON-->
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Submit
+            </button>
+
+            <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
