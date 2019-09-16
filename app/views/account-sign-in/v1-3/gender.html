@@ -1,7 +1,7 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-Sign in
+Add new exercise
 {% endblock %}
 
 {% block content %}
@@ -12,18 +12,70 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="form-gender-id" method="post">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-l" style="margin-bottom:0px;">
-            What is your gender?
-          </h2>
-          <!--RADIO GROUP-->
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+    <form class="form" action="landing-diversity" method="post">
 
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h2 class="govuk-heading-l"></h2>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter" style="text-align:right">
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+
+        <!--SIDE NAV-->
+        <div class="govuk-grid-column-one-quarter">
+          <ul class="dwp-vertical-navigation">
+            <!--<li>
+              SIDE NAV<a href="tab-overview?current=tab-overview">
+              </a>
+            </li>
+            <li>
+              <a href="no-applications?current=no-applications">
+                Applications
+              </a>
+            </li>-->
+            <li>
+              <a href="tab-ask-personal?current=ask-personal">
+                Personal details
+              </a>
+            </li>
+            <li>
+              <a aria-current="page" href="finish-diversity?current=finish-diversity">
+                Diversity
+              </a>
+            </li>
+            <li>
+              <a href="ask-character?current=ask-character">
+                Character
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Create an account</span>
+            Gender
+          </h1>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-l" style="margin-bottom:0px;">
+                  What gender are you?
+                </h2>
               </legend>
+
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="gender-0" name="gender" type="radio" value="england">
@@ -46,10 +98,11 @@ Sign in
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="gender-3" name="gender" type="radio" value="scotland">
                   <label class="govuk-label govuk-radios__label" for="gender-3">
-                    Other
+                    Gender neutral
                   </label>
                 </div>
               </div>
+
             </fieldset>
           </div>
 
@@ -91,19 +144,29 @@ Sign in
                     </fieldset>
                   </div>
 
-                  <!--BUTTON-->
-                  <button type="submit" class="govuk-button" data-module="govuk-button">
+
+
+
+                  <button class="govuk-button" data-module="govuk-button">
                     Save and continue
                   </button>
 
-                  <!--END MAIN WRAPPER-->
                 </div>
               </div>
-            </form>
+
           </main>
 
-          {% include "includes/footer.html" %}
 
+
+
+
+          <!--END MAIN WRAPPER-->
         </div>
+      </div>
+  </main>
 
-        {% endblock %}
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

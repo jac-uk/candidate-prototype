@@ -1,0 +1,248 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="landing-diversity" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h2 class="govuk-heading-l"></h2>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter" style="text-align:right">
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+
+        <!--SIDE NAV-->
+        <div class="govuk-grid-column-one-quarter">
+          <ul class="dwp-vertical-navigation">
+            <!--<li>
+              SIDE NAV<a href="tab-overview?current=tab-overview">
+              </a>
+            </li>
+            <li>
+              <a href="no-applications?current=no-applications">
+                Applications
+              </a>
+            </li>-->
+            <li>
+              <a href="tab-ask-personal?current=ask-personal">
+                Personal details
+              </a>
+            </li>
+            <li>
+              <a aria-current="page" href="finish-diversityl?current=finish-diversity">
+                Diversity
+              </a>
+            </li>
+            <li>
+              <a href="ask-character?current=ask-character">
+                Character
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Create an account</span>
+            Ethnicity
+          </h1>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-l" style="margin-bottom:0px;">
+                  What's your ethnic group?
+                </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-0" name="ethnicity" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-0">
+                    Prefer not to say
+                  </label>
+                </div>
+                <p class="govuk-heading-m" style="margin-top: 1.5rem;">
+                  Asian/Asian British
+                </p>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-1" name="ethnicity" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-1">
+                    Bangladeshi
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-2" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-2">
+                    Chinese
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-3" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-3">
+                    Indian
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-4" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-4">
+                    Pakistani
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-5" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-5">
+                    Any other Asian background
+                  </label>
+                </div>
+                <p class="govuk-heading-m" style="margin-top: 1.5rem;">
+                  Black/African/Caribbean/Black British
+                </p>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-6" name="ethnicity" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-6">
+                    African
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-7" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-7">
+                    Caribbean
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-8" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-8">
+                    Any other Black/African/Caribbean background
+                  </label>
+                </div>
+                <p class="govuk-heading-m" style="margin-top: 1.5rem;">
+                  White
+                </p>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-9" name="ethnicity" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-9">
+                    English, Welsh, Scottish, Northern Ireland, British
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-10" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-10">
+                    Irish
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-11" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-11">
+                    Gypsy or Irish Traveller
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-12" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-12">
+                    Any other White background
+                  </label>
+                </div>
+                <p class="govuk-heading-m" style="margin-top: 1.5rem;">
+                  Mixed or multiple ethnic backgrounds
+                </p>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-13" name="ethnicity" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-13">
+                    White and Black Caribbean
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-14" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-14">
+                    White and Black African
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-15" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-15">
+                    White and Asian
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-16" name="ethnicity" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-16">
+                    Any other mixed or multiple ethnic backgrounds
+                  </label>
+                </div>
+                <p class="govuk-heading-m" style="margin-top: 1.5rem;">
+                  Other ethnic group
+                </p>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ethnicity-17-conditional" name="ethnicity" type="radio"
+                    value="england" data-aria-controls="conditional-ethnicity-17-conditional">
+                  <label class="govuk-label govuk-radios__label" for="ethnicity-17-conditional">
+                    Other
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-ethnicity-17-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="ethnicity-other">
+                      Ethnicity
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="ethnicity-other" name="ethnicity-other"
+                      type="email" spellcheck="false">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
