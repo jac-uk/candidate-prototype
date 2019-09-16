@@ -12,7 +12,7 @@ Sign in
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="profile" method="post">
+    <form class="form" action="confirm-email" method="post">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
 
@@ -24,7 +24,7 @@ Sign in
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
-              Enter your email address
+              Email address
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
@@ -32,21 +32,36 @@ Sign in
           <h2 class="govuk-heading-l">
             Create an account
           </h2>
+          <span id="waste-hint" class="govuk-hint">
+            You'll need to create an account before you can apply.
+          </span>
           <div class="govuk-form-group">
             <label class="govuk-label" for="event-name">
-              Enter your email address
+              Name
             </label>
-            <span id="waste-hint" class="govuk-hint">
-              You'll need to create an account before you can apply.
-            </span>
 
             <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email address
+            </label>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Confirm your email address
+            </label>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+
           </div>
 
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">
-            Send magic link
+            Continue
           </button>
 
           <p>
