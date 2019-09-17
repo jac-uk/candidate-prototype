@@ -30,6 +30,11 @@ Add new exercise
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                What are you qualified as? </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+              </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional" name="contacted" type="radio"
@@ -38,7 +43,6 @@ Add new exercise
                     Advocate - Scotland
                   </label>
                 </div>
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
                     value="phone" data-aria-controls="conditional-contacted-conditional-2">
@@ -46,7 +50,6 @@ Add new exercise
                     Barrister
                   </label>
                 </div>
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
                     value="phone" data-aria-controls="conditional-contacted-conditional-2">
@@ -54,7 +57,6 @@ Add new exercise
                     Fellow of the Chartered Institute of Legal Executives (CILEx)
                   </label>
                 </div>
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
                     value="phone" data-aria-controls="conditional-contacted-conditional-2">
@@ -62,7 +64,6 @@ Add new exercise
                     Solicitor
                   </label>
                 </div>
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional-3" name="contacted" type="radio"
                     value="text" data-aria-controls="conditional-contacted-conditional-3">
@@ -73,8 +74,8 @@ Add new exercise
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-contacted-conditional-3">
                   <div class="govuk-form-group">
-                    <label class="govuk-label" for="contact-by-text">
-                      Add qualification
+                    <label class="govuk-label-input" for="contact-by-text">
+                      Qualification
                     </label>
                     <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-text" name="contact-by-text"
                       type="tel">
@@ -83,8 +84,6 @@ Add new exercise
               </div>
             </fieldset>
           </div>
-
-
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
@@ -109,7 +108,7 @@ Add new exercise
                   <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                     id="conditional-how-contacted-conditional">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
+                      <label class="govuk-label-input" for="contact-by-email">
                         Have you passed the Qualified Lawyers Transfer Scheme (QLTS)?
                       </label>
                       <div class="govuk-radios__item">
@@ -133,11 +132,14 @@ Add new exercise
                   </div>
                 </div>
             </fieldset>
+            <div style="margin-top:40px;">
+              <a href="#" class="govuk-button govuk-button--secondary">
+                Add another role
+              </a>
+            </div>
           </div>
 
-          <a href="#" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Add another role
-          </a>
+
           </p>
 
 
