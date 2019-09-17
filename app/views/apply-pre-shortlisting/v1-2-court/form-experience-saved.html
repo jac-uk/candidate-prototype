@@ -23,27 +23,27 @@ Add new exercise
             Attorney</span>
           <br>
           <h1 class="govuk-heading-xl">
-            Work experience
+            Legal work experience
           </h1>
+          <p class="govuk-body-l">Provide your legal work experience starting with your most recent job.</p>
 
-
-
-
-
+          <h2 class="govuk-heading-m">
+            Your work experience
+          </h2>
           <!--TABLE-->
-          <table class="govuk-table">
-            <thead class="govuk-table__head">
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">18 April 2018 to present</th>
-                <td class="govuk-table__cell">Circuit judge</td>
-                <td class="govuk-table__cell"><a href="#">Remove</a></td>
-              </tr>
-
-            </tbody>
-          </table>
-
+          <div class="govuk-table-add-another">
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">18 April 2018 to present</th>
+                  <td class="govuk-table__cell">Circuit judge</td>
+                  <td class="govuk-table__cell"><a href="#">Remove</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <!--TEXT INPUT-->
           <div class="govuk-form-group">
@@ -61,7 +61,7 @@ Add new exercise
               <div class="govuk-checkboxes__item">
                 <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
                 <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                  I am currently working in this role
+                  I'm currently working in this role
                 </label>
               </div>
             </fieldset>
@@ -128,7 +128,7 @@ Add new exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <label class="govuk-label-input" for="event-name">
-                What are your law-related tasks in this role?
+                Law-related tasks in this role
               </label>
               <span id="waste-hint" class="govuk-hint">
                 Select all that apply.
@@ -201,25 +201,20 @@ Add new exercise
                   <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
                     id="conditional-citizenship-conditional">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
-                        Describe task.
+                      <label class="govuk-label-input" for="contact-by-email">
+                        Describe task
                       </label>
                       <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email"
                         type="email" spellcheck="false">
                     </div>
-
                   </div>
-                  <a href="form-experience-saved" button class="govuk-button govuk-button--secondary"
-                    data-module="govuk-button">
-                    Add another role
-                  </a>
-
             </fieldset>
+            <div style="margin-top:40px;">
+              <a href="#" class="govuk-button govuk-button--secondary">
+                Add another
+              </a>
+            </div>
           </div>
-
-
-
-
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
@@ -236,12 +231,6 @@ Add new exercise
               <p class="govuk-body">Have you sat for a judge for at least 30 days?</p>
 
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-
-
-
-
-
-
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional-2" name="contacted" type="radio"
                     value="phone" data-aria-controls="conditional-contacted-conditional-2">
