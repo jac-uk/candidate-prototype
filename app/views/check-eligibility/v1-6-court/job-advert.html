@@ -6,23 +6,27 @@ Sign in
 
 {% block content %}
 
-
-
-{% include "includes/header.html" %}
-
-<!--MAIN WRAPPER-->
-
-
 <div class="govuk-width-container">
-  <main class="govuk-main-wrapper" role="main">
 
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
-      <a href="apply/task-list-pre.html" class="govuk-button" data-module="govuk-button">
-        Apply
-      </a>
-    </div>
+      <div class="govuk-grid-column-two-thirds">
 
+        <p class="govuk-body">
+          <a href="apply/task-list-pre" class="govuk-button">Apply</a>
+        </p>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+    </form>
   </main>
+
+  {% include "includes/footer.html" %}
+
 </div>
-{% include "includes/footer.html" %}
+
 {% endblock %}
