@@ -20,9 +20,14 @@ Add new exercise
           <span class="govuk-caption-xl">114 Judge of the First-tier Tribunal for England and Wales</span>
           <br>
           <h1 class="govuk-heading-xl">
-            Legal work experience
+            Post-qualification legal work experience
           </h1>
-          <p class="govuk-body-l">Provide your legal work experience starting with your most recent job.</p>
+          <p class="govuk-body-l">Add details of all <a
+              href="https://www.judicialappointments.gov.uk/eligibility-tribunals">
+              law-related work experience</a> you've gained since qualifying.</p>
+          <p class="govuk-body">If you do not have a legal qualification, give details of all relevant law-related
+            tasks.</p>
+
 
 
           <!--TEXT INPUT-->
@@ -38,7 +43,7 @@ Add new exercise
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
-          <!--CHECKBOX GROUP-->
+          <!--CHECKBOX GROUP
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <div class="govuk-checkboxes__item">
@@ -49,6 +54,7 @@ Add new exercise
               </div>
             </fieldset>
           </div>
+          -->
 
 
           <!--DATE-->
@@ -56,6 +62,46 @@ Add new exercise
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 Start date </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                        name="passport-issued-day" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                End date </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Leave this blank if you're currently in this role.
+              </span>
               <div class="govuk-date-input" id="passport-issued">
                 <div class="govuk-date-input" id="passport-issued">
                   <div class="govuk-date-input__item">
@@ -116,41 +162,39 @@ Add new exercise
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Advising on the application of the law </label>
+                    Acting as a lawyer</label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
                   <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    Arbitrator
+                    Acting as a mediator
                   </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
                   <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Assisting in resolution proceedings
-                  </label>
+                    Acting as an arbitrator </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Drafting documents that affect a person's rights or obligations on the application of the law
-                  </label>
+                    Advising on resolution proceedings </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Judicial functions in courts or tribunals </label>
+                    Advising on the application of the law </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Lawyer
+                    Carrying out judicial functions in a court or tribunal
                 </div>
 
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                   <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    Mediating in resolution proceedings, or issues that could result in proceedings
+                    Drafting rights or obligations documents
                 </div>
 
                 <div class="govuk-checkboxes__item">
@@ -164,14 +208,14 @@ Add new exercise
                     <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
                       value="email" data-aria-controls="conditional-citizenship-conditional">
                     <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                      Other law-related tasks
+                      Different law-related tasks
                     </label>
                   </div>
                   <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
                     id="conditional-citizenship-conditional">
                     <div class="govuk-form-group">
                       <label class="govuk-label-input" for="contact-by-email">
-                        Describe tasks
+                        List your different law-related tasks
                       </label>
                       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                         aria-describedby="more-detail-hint"></textarea>

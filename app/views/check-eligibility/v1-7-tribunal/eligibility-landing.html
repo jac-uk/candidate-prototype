@@ -1,0 +1,29 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <h1 class="govuk-heading-xl">JAC user research</h1>
+        <p class="govuk-body"><a href="job-advert">Session A </a>.</p>
+        <br>
+        <p class="govuk-body"><a href="/check-eligibility/v1-7-court/job-advert.html">Session B </a>.</p>
+
+
+      </div>
+    </div>
+  </main>
+  {% include "includes/footer.html" %}
+</div> {% endblock %}

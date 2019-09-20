@@ -30,9 +30,7 @@ Add new exercise
             <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 What are you qualified as? </legend>
-              <span id="waste-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
+
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional" name="contacted" type="radio"
@@ -66,14 +64,14 @@ Add new exercise
                   <input class="govuk-radios__input" id="contacted-conditional-3" name="contacted" type="radio"
                     value="text" data-aria-controls="conditional-contacted-conditional-3">
                   <label class="govuk-label govuk-radios__label" for="contacted-conditional-3">
-                    Experience in law that's equivalent to any of the above
+                    None of the above - I have equivalent experience in law
                   </label>
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-contacted-conditional-3">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-text">
-                      Relevant experience
+                      Equivalent experience
                     </label>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
@@ -81,12 +79,54 @@ Add new exercise
                 </div>
               </div>
             </fieldset>
-            <div style="margin-top:40px;">
-              <a href="#" class="govuk-button govuk-button--secondary">
-                Add another
-              </a>
-            </div>
           </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Where are you qualified? </legend>
+
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    England and Wales
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Northern Ireland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Scotland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    None of the above - I have equivalent experience in law
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div style="margin-top:40px;">
+            <a href="#" class="govuk-button govuk-button--secondary">
+              Add another
+            </a>
+          </div>
+
 
           <!--BUTTON-->
           <button type="submit" class="govuk-button" data-module="govuk-button">

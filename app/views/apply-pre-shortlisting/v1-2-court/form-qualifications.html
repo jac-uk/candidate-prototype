@@ -32,9 +32,7 @@ Add new exercise
             <fieldset class="govuk-fieldset" aria-describedby="contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 What are you qualified as? </legend>
-              <span id="waste-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
+
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="contacted-conditional" name="contacted" type="radio"
@@ -88,62 +86,47 @@ Add new exercise
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Where did you qualify? </legend>
+                Where are you qualified? </legend>
+
+
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
                     value="email" data-aria-controls="conditional-how-contacted-conditional">
                   <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                    England or Wales
+                    England and Wales
                   </label>
                 </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
-                      value="email" data-aria-controls="conditional-how-contacted-conditional">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                      Northern Ireland or Scotland
-                    </label>
-                  </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                    id="conditional-how-contacted-conditional">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label-input" for="contact-by-email">
-                        Have you passed the Qualified Lawyers Transfer Scheme (QLTS)?
-                      </label>
-                      <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
-                          type="radio" value="scotland">
-                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                          Yes
-                        </label>
-
-                      </div>
-
-                      <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
-                          type="radio" value="scotland">
-                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                          No
-                        </label>
-
-                      </div>
-                    </div>
-                  </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Northern Ireland
+                  </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                    value="email" data-aria-controls="conditional-how-contacted-conditional">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                    Scotland
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <div style="margin-top:40px;">
-              <a href="#" class="govuk-button govuk-button--secondary">
-                Add another
-              </a>
-            </div>
           </div>
 
+          <div style="margin-top:40px;">
+            <a href="#" class="govuk-button govuk-button--secondary">
+              Add another
+            </a>
+          </div>
+        </div>
 
-          </p>
+
+        </p>
 
 
-          <!--RADIO GROUP
+        <!--RADIO GROUP
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -174,7 +157,7 @@ Add new exercise
             </fieldset>
           </div>-->
 
-          <!--DATE
+        <!--DATE
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -255,17 +238,17 @@ Add new exercise
           </p>
 
           <!--BUTTON-->
-          <button type="submit" class="govuk-button" data-module="govuk-button">
-            Continue
-          </button>
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
-          <!--END MAIN WRAPPER-->
-        </div>
+        <!--END MAIN WRAPPER-->
       </div>
-    </form>
-  </main>
+</div>
+</form>
+</main>
 
-  {% include "includes/footer.html" %}
+{% include "includes/footer.html" %}
 
 </div>
 
