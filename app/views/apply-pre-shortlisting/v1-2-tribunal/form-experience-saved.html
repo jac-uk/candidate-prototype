@@ -51,18 +51,14 @@ Add new exercise
             </label>
             <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
-
-          <!--CHECKBOX GROUP-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                  I'm currently working in this role
-                </label>
-              </div>
-            </fieldset>
+            <label class="govuk-label-input" for="event-name">
+              Organisation or business name
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
           </div>
+
+
 
           <!--DATE-->
           <div class="govuk-form-group">
@@ -70,53 +66,75 @@ Add new exercise
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 Start date </legend>
               <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                        name="passport-issued-day" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
                   </div>
                 </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-              </div>
             </fieldset>
           </div>
 
-          <!--DATE-->
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 End date </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Leave this blank if you're currently in this role.
+              </span>
               <div class="govuk-date-input" id="passport-issued">
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                      Month
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
-                      name="passport-issued-month" type="number" pattern="[0-9]*">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day"
+                        name="passport-issued-day" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
                   </div>
                 </div>
-                <div class="govuk-date-input__item">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                      Year
-                    </label>
-                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
-                      name="passport-issued-year" type="number" pattern="[0-9]*">
-                  </div>
-                </div>
-              </div>
             </fieldset>
           </div>
 
@@ -127,9 +145,7 @@ Add new exercise
               <label class="govuk-label-input" for="event-name">
                 Law-related tasks in this role
               </label>
-              <span id="waste-hint" class="govuk-hint">
-                Select all that apply.
-              </span>
+
               <!--help details
               <details class="govuk-details" data-module="govuk-details">
                 <summary class="govuk-details__summary">
@@ -203,7 +219,7 @@ Add new exercise
                       <label class="govuk-label-input" for="contact-by-email">
                         List your different law-related tasks
                       </label>
-                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2"
                         aria-describedby="more-detail-hint"></textarea>
                     </div>
             </fieldset>
