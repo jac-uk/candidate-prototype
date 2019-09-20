@@ -215,100 +215,18 @@ Add new exercise
             </div>
           </div>
 
-          <h2 class="govuk-heading-l" for="event-name">
-            Judicial experience
-          </h2>
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Have you ever been a judge? </legend>
-              </legend>
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
 
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
-                    value="email" data-aria-controls="conditional-how-contacted-conditional">
-                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                    Yes </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-how-contacted-conditional">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label" for="contact-by-email">
-                      Do you have at least 30 sitting days?
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted"
-                      type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                    <Yes class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                      Yes
-                      </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted"
-                      type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                    <Yes class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                      No
-                      </label>
-                  </div>
-                </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
-                      value="email" data-aria-controls="conditional-how-contacted-conditional">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                      No </label>
-                  </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                    id="conditional-how-contacted-conditional">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
-                        Do you have quasi-judicial experience?
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted"
-                        type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-3">
-                      <Yes class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                        Yes
-                        </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted"
-                        type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-3">
-                      <Yes class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                        No
-                        </label>
-                    </div>
-                  </div>
-
-
-
-
-                </div>
-              </div>
-            </fieldset>
-          </div>
-
-
-
+          <!--END MAIN WRAPPER-->
         </div>
-
       </div>
+    </form>
+  </main>
 
-      <!--BUTTON-->
-      <button type="submit" class="govuk-button" data-module="govuk-button">
-        Save and continue
-      </button>
-
-      <!--END MAIN WRAPPER-->
-</div>
-</div>
-</form>
-</main>
-
-{% include "includes/footer.html" %}
+  {% include "includes/footer.html" %}
 
 </div>
 
