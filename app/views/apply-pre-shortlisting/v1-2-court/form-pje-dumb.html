@@ -1,0 +1,183 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
+            Coroner
+            &
+            Attorney</span>
+
+          <br>
+          <h1 class="govuk-heading-xl">
+            Judicial experience
+          </h1>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3 class="govuk-heading-m">
+                  1. Have you ever been a judge?
+                </h3>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Yes - go to question 2
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    No - go to question 3
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3 class="govuk-heading-m"> 2. Have you sat for at least 30 days?
+
+                </h3>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Yes - go to 'Save and continue'
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    No - go to question 5
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3 class="govuk-heading-m"> 3. Have you ever held a similar role to a judge for a <a
+                    href="https://www.judicialappointments.gov.uk/eligibility-legally-qualified-candidates"
+                    target="_blank">
+                    quasi-judicial equivalent body</a>?
+
+                </h3>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Yes - go to question 4
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    No - go to question 5
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3 class="govuk-heading-m">
+                  4. Have you sat for at least 30 days?
+
+                </h3>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                    value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Yes - go to 'Save and continue'
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                    value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    No - go to question 5
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h3 class="govuk-heading-m">
+                  5. Describe your similar significant Judicial experience
+
+
+                </h3>
+              </legend>
+
+
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                aria-describedby="more-detail-hint"></textarea>
+          </div>
+
+
+        </div>
+        </fieldset>
+
+
+
+
+      </div>
+
+      <!--BUTTON-->
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+      <!--END MAIN WRAPPER-->
+</div>
+</div>
+</form>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
