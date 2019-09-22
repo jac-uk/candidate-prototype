@@ -1,0 +1,73 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
+            Coroner
+            &
+            Attorney</span>
+
+          <br>
+          <h1 class="govuk-heading-xl">
+            Judicial experience
+          </h1>
+
+
+          Have you ever been a judge?
+          Yes
+          Have you sat for at least 30 days?
+          Yes
+
+
+          No
+          Have you ever held a similar role to a judge for a <a
+            href="https://www.judicialappointments.gov.uk/eligibility-legally-qualified-candidates" target="_blank">
+            quasi-judicial equivalent body</a>?
+          Yes
+          Have you sat for at least 30 days?
+          Yes
+
+          No - text area
+          Describe your similar significant Judicial experience
+
+
+          Yes-equivalent No-30 days - text area
+          Describe your similar significant Judicial experience
+
+
+
+
+
+        </div>
+
+        <!--BUTTON-->
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+</div>
+</form>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
