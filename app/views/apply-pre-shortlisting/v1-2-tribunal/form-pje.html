@@ -66,15 +66,15 @@ Add new exercise
                       <div class="govuk-radios">
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                            type="radio" value="england">
+                            type="radio" value="england" data-aria-controls="sitting-days-yes">
                           <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                             Yes
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
-                            type="radio" value="scotland">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
+                            type="radio" value="scotland" data-aria-controls="sitting-days-no">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                             No
                           </label>
                         </div>
@@ -101,24 +101,47 @@ Add new exercise
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live"
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
                             type="radio" value="scotland">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                             No
                           </label>
                         </div>
                     </fieldset>
                   </div>
-
-
                 </div>
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="sitting-days-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Can you provide more detail?
+                        </h1>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                          </label>
+                          <span id="more-detail-hint" class="govuk-hint">
+                            Do not include personal or financial information, like your National Insurance number or
+                            credit card details.
+                          </span>
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                            aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                    </fieldset>
+                  </div>
+                </div>
+
               </div>
-            </fieldset>
           </div>
+          </fieldset>
+        </div>
 
 
 
-          <!---
+        <!---
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -192,18 +215,18 @@ Add new exercise
         </div>
       </div>-->
 
-          <!--BUTTON-->
-          <button type="submit" class="govuk-button" data-module="govuk-button">
-            Save and continue
-          </button>
+        <!--BUTTON-->
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
 
-          <!--END MAIN WRAPPER-->
-        </div>
+        <!--END MAIN WRAPPER-->
       </div>
-    </form>
-  </main>
+</div>
+</form>
+</main>
 
-  {% include "includes/footer.html" %}
+{% include "includes/footer.html" %}
 
 </div>
 
