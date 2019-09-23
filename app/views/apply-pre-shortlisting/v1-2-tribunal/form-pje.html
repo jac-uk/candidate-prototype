@@ -66,7 +66,7 @@ Add new exercise
                       <div class="govuk-radios">
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                            type="radio" value="england" data-aria-controls="sitting-days-yes">
+                            type="radio" value="england">
                           <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                             Yes
                           </label>
@@ -89,21 +89,24 @@ Add new exercise
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">
-                          Equivalent
+                          Have you ever held a similar role to a judge for a <a
+                            href="https://www.judicialappointments.gov.uk/eligibility-legally-qualified-candidates"
+                            target="_blank">
+                            quasi-judicial equivalent body</a>?
                         </h1>
                       </legend>
                       <div class="govuk-radios">
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                            type="radio" value="england" data-aria-controls="sitting-days-yes-2">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                          <input class="govuk-radios__input" id="equivalent-input-yes" name="equivalent-input"
+                            type="radio" value="england" data-aria-controls="equivalent-yes">
+                          <label class="govuk-label govuk-radios__label" for="equivalent-input">
                             Yes
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
-                            type="radio" value="scotland" data-aria-controls="sitting-days-no-2">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                          <input class="govuk-radios__input" id="equivalent-input-no" name="equivalent-input"
+                            type="radio" value="scotland" data-aria-controls="equivalent-no"> <label
+                            class="govuk-label govuk-radios__label" for="equivalent-input-3">
                             No
                           </label>
                         </div>
@@ -113,7 +116,7 @@ Add new exercise
 
                 <div
                   class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                  id="judge-conditional-yes">
+                  id="equivalent-yes">
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -124,14 +127,14 @@ Add new exercise
                       <div class="govuk-radios">
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                            type="radio" value="england" data-aria-controls="sitting-days-yes-2">
+                            type="radio" value="england">
                           <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                             Yes
                           </label>
                         </div>
                         <div class="govuk-radios__item">
                           <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
-                            type="radio" value="scotland" data-aria-controls="sitting-days-no">
+                            type="radio" value="scotland" data-aria-controls="equivalent-sitting-days-no">
                           <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                             No
                           </label>
@@ -142,20 +145,17 @@ Add new exercise
 
                 <div
                   class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                  id="sitting-days-no">
+                  id="equivalent-no">
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">
-                          Can you provide more detail?
+                          Explain how you've gained significant judicial experience.
                         </h1>
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="more-detail">
                           </label>
-                          <span id="more-detail-hint" class="govuk-hint">
-                            Do not include personal or financial information, like your National Insurance number or
-                            credit card details.
-                          </span>
+
                           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                             aria-describedby="more-detail-hint"></textarea>
                         </div>
@@ -163,22 +163,44 @@ Add new exercise
                   </div>
                 </div>
 
+
+
+
                 <div
                   class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                  id="sitting-days-no-2">
+                  id="equivalent-sitting-days-no">
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">
-                          Can you provide more detail?
+                          Explain how you've gained significant judicial experience.
                         </h1>
                         <div class="govuk-form-group">
                           <label class="govuk-label" for="more-detail">
                           </label>
-                          <span id="more-detail-hint" class="govuk-hint">
-                            Do not include personal or financial information, like your National Insurance number or
-                            credit card details.
-                          </span>
+
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                            aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="sitting-days-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Explain how you've gained significant judicial experience.
+                        </h1>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                          </label>
+
                           <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                             aria-describedby="more-detail-hint"></textarea>
                         </div>
