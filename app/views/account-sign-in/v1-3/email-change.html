@@ -12,8 +12,7 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <form class="form" action="landing-diversity" method="post">
-
+    <form class="form" action="landing-personal" method="post">
 
 
       <!--PAGE TITLE-->
@@ -41,11 +40,11 @@ Add new exercise
               <a href="no-applications?current=no-applications">
                 Applications
               </a>
-            </li>
-            <li>-->
-            <a aria-current="page" href="tab-ask-personal?current=ask-personal">
-              Personal details
-            </a>
+            </li>-->
+            <li>
+              <a aria-current="page" href="tab-ask-personal?current=ask-personal">
+                Personal details
+              </a>
             </li>
             <li>
               <a href="ask-diversity?current=ask-diversity">
@@ -61,50 +60,45 @@ Add new exercise
           </ul>
         </div>
 
-
         <div class="govuk-grid-column-three-quarters">
 
 
           <h1 class="govuk-heading-xl">
             <span class="govuk-caption-xl">Create an account</span>
-            Personal details
+            Email address
           </h1>
 
-          <span id="waste-hint" class="govuk-hint">
-            We'll use these to confirm your identity
-            if you need to contact us.
-          </span>
 
-          <table class="govuk-table">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Current email address
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
 
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Name</th>
-              <td class="govuk-table__cell">Eli Webb</td>
-              <td class="govuk-table__cell"><a href="name">Change</a></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Email address</th>
-              <td class="govuk-table__cell">eli.webb@hotmail.com</td>
-              <td class="govuk-table__cell"><a href="name">Change</a></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of birth</th>
-              <td class="govuk-table__cell">25 10 1979</td>
-              <td class="govuk-table__cell"><a href="name">Change</a></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">National Insurance number</th>
-              <td class="govuk-table__cell">MY928561B</td>
-              <td class="govuk-table__cell"><a href="name">Change</a></td>
-            </tr>
-            </tbody>
-          </table>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              New email address
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Confirm new email address
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+
           <button class="govuk-button" data-module="govuk-button">
-            Add diversity information </button>
+            Save and continue
+          </button>
 
         </div>
       </div>
-
+    </form>
   </main>
 
 
