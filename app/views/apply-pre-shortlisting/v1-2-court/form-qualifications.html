@@ -87,8 +87,6 @@ Add new exercise
             <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 Where are you qualified? </legend>
-
-
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
@@ -114,18 +112,31 @@ Add new exercise
               </div>
             </fieldset>
           </div>
-          <div style="margin-top:40px;">
-            <a href=" form-qualifications-saved" class="govuk-button govuk-button--secondary">
-              Add another
-            </a>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="another-qual-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Do you have a previous qualification?</legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="another-qual-conditional" name="another-qual" type="radio"
+                    value="email" data-aria-controls="conditional-another-qual-conditional">
+                  <label class="govuk-label govuk-radios__label" for="another-qual-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="another-qual-conditional" name="another-qual" type="radio"
+                    value="email" data-aria-controls="conditional-another-qual-conditional">
+                  <label class="govuk-label govuk-radios__label" for="another-qual-conditional">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
           </div>
-        </div>
-      </div>
 
-      </p>
-
-
-      <!--RADIO GROUP
+          <!--RADIO GROUP
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -156,7 +167,7 @@ Add new exercise
             </fieldset>
           </div>-->
 
-      <!--DATE
+          <!--DATE
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -234,20 +245,20 @@ Add new exercise
             <p class="govuk-body">
               <a href="#">Add another</a>
           </div>
-          </p>
+          </p>-->
 
           <!--BUTTON-->
-      <button type="submit" class="govuk-button" data-module="govuk-button">
-        Save and continue
-      </button>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
 
-      <!--END MAIN WRAPPER-->
-</div>
-</div>
-</form>
-</main>
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
 
-{% include "includes/footer.html" %}
+  {% include "includes/footer.html" %}
 
 </div>
 
