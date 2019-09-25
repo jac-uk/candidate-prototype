@@ -21,23 +21,36 @@ Sign in
               Attorney</span>
             <br>
             <h1 class="govuk-heading-xl">Check if you're eligible</h1>
-            <p class="govuk-body">If you cannot meet all the requirements, you can still apply but it could mean you’re
+            <p class="govuk-body-l">If you cannot meet all the requirements, you can still apply but it could mean
+              you’re
               unlikely to be offered a position.
             </p>
             <h2 class="govuk-heading-l">Citizenship</h2>
             <p> You're a citizen of the UK, the Republic of Ireland or another Commonwealth country.
             </p>
+            <!--RADIO GROUP-->
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Yes, I'm an eligible citizen. </label>
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="citizenship" name="citizenship" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="citizenship">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="citizenship-2" name="citizenship" type="radio"
+                      value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="citizenship-2">
+                      No
+                    </label>
                   </div>
                 </div>
               </fieldset>
             </div>
+            <!--END RADIO GROUP-->
 
             <h2 class="govuk-heading-l">Character</h2>
             <p> You're confident there are no issues about your <a
@@ -49,33 +62,54 @@ Sign in
                 your suitability for this role.
               </span>-->
             </p>
+            <!--RADIO GROUP-->
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Yes, I think I meet the standards of good character.</label>
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character" name="character" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="character">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-2" name="character" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="character-2">
+                      No
+                    </label>
                   </div>
                 </div>
               </fieldset>
             </div>
-
+            <!--END RADIO GROUP-->
 
             <h2 class="govuk-heading-l">Reasonable length of service</h2>
             <p> You can work for at least 5 years before reaching the retirement age of 70.
             </p>
+            <!--RADIO GROUP-->
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Yes, I can work for the required number of years. </label>
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="rsl" name="rsl" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="rsl">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="rsl-2" name="rsl" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="rsl-2">
+                      No
+                    </label>
                   </div>
                 </div>
               </fieldset>
             </div>
+            <!--END RADIO GROUP-->
 
             <h2 class="govuk-heading-l">Qualifications and experience</h2>
             <p> You're qualified in England or Wales as a barrister, fellow of CILEx or solicitor, and have at least 5
@@ -84,46 +118,39 @@ Sign in
                 target="_blank">post-qualification
                 law-related work experience</a>.
             </p>
-
-            <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Yes, I'm appropriately qualified and experienced. </label>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-
-
-
-
             <p> You have experience of criminal law and procedure in the Crown Court and/or the Court of Appeal,
               Criminal
               Division and <a href="https://www.judicialappointments.gov.uk/eligibility-legally-qualified-candidates"
                 target="_blank">sufficient directly relevant previous judicial experience</a>.
             </p>
-            <div class=" govuk-form-group">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Yes, I'm appropriately qualified and experienced. </label>
+            <!--RADIO GROUP-->
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="quals" name="quals" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="quals">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="quals-2" name="quals" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="quals-2">
+                      No
+                    </label>
                   </div>
                 </div>
               </fieldset>
             </div>
+            <!--END RADIO GROUP-->
 
             <button type="submit" class="govuk-button" data-module="govuk-button">
               Continue
             </button>
             <br>
             <a href="eligibility-no">No</a>
-
-
   </main>
 </div>
 
