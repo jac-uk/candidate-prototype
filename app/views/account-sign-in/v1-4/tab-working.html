@@ -1,0 +1,87 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+    <!--PAGE TITLE-->
+    <div class="govuk-panel govuk-panel--purple"
+      style="margin-top:-40px; margin-bottom: 60px; padding-left:15px; padding-top:10px; padding-bottom:0">
+      <h1 class="govuk-panel__body" style="margin-bottom:0;">
+        <strong>Eli Webb</strong>
+      </h1>
+      <p class="govuk-body"><a href="#" style="color:white;">Sign out</a></p>
+    </div>
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV-->
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="tab-personal-details?current=tab-personal-details">
+              Personal details
+            </a>
+          </li>
+          <li>
+            <a href="tab-diversity?current=tab-diversity">
+              Diversity information
+            </a>
+          </li>
+          <li>
+            <a href="tab-character?current=tab-character">
+              Character information
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-working?current=tab-working">
+              Working preferences
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <!--LINK-->
+        <div style="text-align: right;">
+          <a href="working-preferences" class="govuk-body">Update working preferences</a>
+        </div>
+
+        <!--HEADER-->
+        <h2 class="govuk-heading-l">Working preferences</h2>
+
+        <!--TABLE-->
+        <table class="govuk-table">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Are you interested in salaried part-time working?
+            </th>
+            <td class="govuk-table__cell">No</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <!--END MAIN WRAPPER-->
+      </div>
+    </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
