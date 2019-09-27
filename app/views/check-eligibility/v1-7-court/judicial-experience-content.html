@@ -1,0 +1,54 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+
+          <h1 class="govuk-heading-xl">
+            Previous judicial experience </h1>
+
+          <p class="govuk-body">For some posts, you'll be expected to have previous judicial experience.</p>
+
+          <p class="govuk-body">This means experience of sitting as a judge, or a similar role for a ‘quasi-judicial
+            body’ for which a legal
+            qualification is required. </p>
+
+          <p class="govuk-body">Quasi-judicial bodies have powers and procedures similar to those of
+            courts. For example,
+            determining facts and making decisions. </p>
+          <p class="govuk-body">Examples of quasi-judicial bodies include:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Coroner</li>
+            <li>Parole Board</li>
+            <li>Chair of a statutory inquiry</li>
+          </ul>
+
+          <p class="govuk-body">It’s expected that you’ll have at least 30 sitting days in this role, not including
+            training or sick days. </p>
+
+          <p class="govuk-body">In exceptional cases, we might accept that you’ve gained the necessary skills in some
+            other significant way. </P <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
