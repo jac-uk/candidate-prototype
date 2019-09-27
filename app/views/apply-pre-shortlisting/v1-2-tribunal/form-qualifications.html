@@ -19,18 +19,18 @@ Add new exercise
           <!--PAGE TITLE-->
           <span class="govuk-caption-xl">114 Judge of the First-tier Tribunal for England and Wales</span>
 
-
           <br>
           <h1 class="govuk-heading-xl">
             Qualifications
           </h1>
 
-
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="what-qual-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 What are you qualified as? </legend>
-
+              <span class="govuk-hint">
+                Choose 1 option.
+              </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="what-qual-conditional" name="what-qual" type="radio"
@@ -85,6 +85,9 @@ Add new exercise
             <fieldset class="govuk-fieldset" aria-describedby="where-qual-conditional-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 Where are you qualified? </legend>
+              <span class="govuk-hint">
+                Choose 1 option.
+              </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="where-qual-conditional" name="where-qual" type="radio"
@@ -118,27 +121,38 @@ Add new exercise
             </fieldset>
           </div>
 
+          <!--DATE-->
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="another-qual-conditional-hint">
+            <fieldset class="govuk-fieldset" aria-describedby="when-qual-hint" role="group">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                Do you have a previous qualification?</legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="another-qual-conditional" name="another-qual" type="radio"
-                    value="email" data-aria-controls="conditional-another-qual-conditional">
-                  <label class="govuk-label govuk-radios__label" for="another-qual-conditional">
-                    Yes
-                  </label>
+                When did you qualify? </legend>
+              <div class="govuk-date-input" id="when-qual">
+                <div class="govuk-date-input" id="when-qual">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="when-qual-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-qual-month"
+                        name="when-qual-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="when-qual-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-qual-year"
+                        name="when-qual-year" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="another-qual-conditional" name="another-qual" type="radio"
-                    value="email" data-aria-controls="conditional-another-qual-conditional">
-                  <label class="govuk-label govuk-radios__label" for="another-qual-conditional">
-                    No
-                  </label>
-                </div>
-              </div>
             </fieldset>
+            <div style="margin-top:40px;">
+              <a href="form-qualifications-add#add-another" class="govuk-button govuk-button--secondary">
+                Add another qualification
+              </a>
+            </div>
           </div>
 
           <!--BUTTON-->
