@@ -83,31 +83,22 @@ Add new exercise
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
-                      value="email" data-aria-controls="conditional-how-contacted-conditional">
+                      value="email">
                     <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
                       Yes
                     </label>
                   </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                    id="conditional-how-contacted-conditional">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="contact-by-email">
-                        Add bankruptcy details
-                      </label>
-                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                        aria-describedby="more-detail-hint"></textarea>
 
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted"
+                        type="radio" value="email">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                        No
+                      </label>
                     </div>
                   </div>
-
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="disability-2" name="disability" type="radio"
-                      value="scotland">
-                    <label class="govuk-label govuk-radios__label" for="disability-2">
-                      No
-                    </label>
-                  </div>
-                </div>
               </fieldset>
           </div>
 
@@ -133,10 +124,11 @@ Add new exercise
                       Yes
                     </label>
                   </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden">
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                    id="conditional-how-contacted-conditional">
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="contact-by-email">
-                        Add bankruptcy details
+                        Add details of late filling, fines or other difficulties.
                       </label>
                       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                         aria-describedby="more-detail-hint"></textarea>
@@ -144,14 +136,19 @@ Add new exercise
                     </div>
                   </div>
 
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="disability-2" name="disability" type="radio"
-                      value="scotland">
-                    <label class="govuk-label govuk-radios__label" for="disability-2">
-                      No
-                    </label>
+
+                  <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted"
+                        type="radio" value="email">
+                      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                        No
+                      </label>
+                    </div>
+
+
+
                   </div>
-                </div>
               </fieldset>
           </div>
 
