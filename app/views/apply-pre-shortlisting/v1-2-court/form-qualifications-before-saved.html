@@ -1,0 +1,136 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
+            Coroner
+            &
+            Attorney</span>
+
+          <br>
+          <h1 class="govuk-heading-xl">
+            Qualifications
+          </h1>
+
+          <!--TABLE-->
+          <div class="govuk-table-add-another">
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">
+                    <strong>Solicitor</strong>
+                    <br> England and Wales
+                  </td>
+                  <td class="govuk-table__cell">
+                    <a href="#">Change</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="what-qual-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                What are you qualified as? </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual" name="contacted" type="radio" value="email"
+                    data-aria-controls="conditional-what-qual">
+                  <label class="govuk-label govuk-radios__label" for="what-qual">
+                    Advocate - Scotland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
+                    data-aria-controls="conditional-what-qual-2">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                    Barrister
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
+                    data-aria-controls="conditional-what-qual-2">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                    Fellow of the Chartered Institute of Legal Executives (CILEx)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
+                    data-aria-controls="conditional-what-qual-2">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                    Solicitor
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="where-qual-conditional-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Where are you qualified? </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-qual-conditional" name="where-qual" type="radio"
+                    value="email" data-aria-controls="conditional-where-qual-conditional">
+                  <label class="govuk-label govuk-radios__label" for="where-qual-conditional">
+                    England and Wales
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-qual-conditional" name="where-qual" type="radio"
+                    value="email" data-aria-controls="conditional-where-qual-conditional">
+                  <label class="govuk-label govuk-radios__label" for="where-qual-conditional">
+                    Northern Ireland
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-qual-conditional" name="where-qual" type="radio"
+                    value="email" data-aria-controls="conditional-where-qual-conditional">
+                  <label class="govuk-label govuk-radios__label" for="where-qual-conditional">
+                    Scotland
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <div style="margin-top:40px;">
+              <a href="form-qualifications-add#add-another" class="govuk-button govuk-button--secondary">
+                Add another
+              </a>
+            </div>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
