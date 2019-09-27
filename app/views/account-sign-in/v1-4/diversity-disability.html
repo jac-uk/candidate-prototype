@@ -1,0 +1,125 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="diversity-ethnicity" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h2 class="govuk-heading-l"></h2>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter" style="text-align:right">
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Diversity information</span>
+            Disability
+          </h1>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Do you have a disability?
+
+            </label>
+            <span id="passport-issued-hint" class="govuk-hint">
+
+              Disability is defined in the <a
+                href="https://www.gov.uk/definition-of-disability-under-equality-act-2010">Equality Act 2010</a>.
+            </span>
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+              </legend>
+
+
+
+
+
+
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="disability-0" name="disability" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="disability-0">
+                    Prefer not to say
+                  </label>
+                </div>
+
+
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                      value="email" data-aria-controls="conditional-how-contacted-conditional">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                    id="conditional-how-contacted-conditional">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Add disability details
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                        aria-describedby="more-detail-hint"></textarea>
+
+                    </div>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="disability-2" name="disability" type="radio"
+                      value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="disability-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
