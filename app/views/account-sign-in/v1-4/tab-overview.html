@@ -1,0 +1,130 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+
+    <!--PAGE TITLE-->
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+        <span class="govuk-caption-xl">Eli Webb</span>
+      </div>
+
+      <div class="govuk-grid-column-one-quarter" style="text-align:right">
+        <p class="govuk-body"><a href="#">Sign out</a></p>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV-->
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a aria-current="page" href="tab-overview?current=tab-overview">
+              Overview
+            </a>
+          </li>
+          <li>
+            <a href="no-applications?current=no-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="ask-personal?current=ask-personal">
+              Personal details
+            </a>
+          </li>
+          <li>
+            <a href="ask-diversity?current=ask-diversity">
+              Diversity
+            </a>
+          </li>
+          <li>
+            <a href="ask-character?current=ask-character">
+              Character
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+
+        <!--GREY PANEL-->
+        <h2 class="govuk-heading-l">Current applications</h2>
+
+        <div class="govuk-panel--s govuk-panel--grey">
+          <p class="govuk-body govuk-!-font-size-27">You have no applications in progress.</p>
+
+        </div>
+
+
+        <!-- <p class="govuk-body-s"><a target="_blank"
+                    href="https://www.judicialappointments.gov.uk/138-deputy-judge-upper-tribunal-immigration-and-asylum-chamber-information-page">
+                    View info page
+                  </a></p>
+                <p class="govuk-body-s">
+                  <a target="blank" href="#">
+                    View application form
+                  </a>
+                </p>-->
+
+      </div>
+
+      <div class="govuk-grid-column-one-half">
+
+        <!--BLUE PANEL
+            <div class="govuk-panel--s govuk-panel--highlight">
+              <span class="govuk-panel__body">Pre launch</span>
+            </div>
+            
+            <ol class="dwp-timeline govuk-list">
+              <li class="dwp-timeline__entry">
+                <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Open for applications</h3>
+                <p class="dwp-timeline__info"><span class="dwp-timeline__date">23 July 2019</span></p>
+              </li>
+              <li class="dwp-timeline__entry" style="margin-top: 0px;">
+                <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Closed for applications</h3>
+                <p class="dwp-timeline__info"><span class="dwp-timeline__date">6 August 2019</span></p>
+              </li>
+              <li class="dwp-timeline__entry">
+                <p class="govuk-body"><a href="tab-timeline">View timeline</a></p>
+              </li>
+            </ol>
+
+          </div>
+        -->
+
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

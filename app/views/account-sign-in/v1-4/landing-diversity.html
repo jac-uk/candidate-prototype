@@ -1,0 +1,129 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+
+    <!--PAGE TITLE-->
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+        <h2 class="govuk-heading-l"></h2>
+      </div>
+
+      <div class="govuk-grid-column-one-quarter" style="text-align:right">
+        <p class="govuk-body"><a href="#">Sign out</a></p>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <!--<li>
+              SIDE NAV<a href="tab-overview?current=tab-overview">
+              </a>
+            </li>
+            <li>
+              <a href="no-applications?current=no-applications">
+                Applications
+              </a>
+            </li>
+           
+          <li>
+            <a href="finish-personal?current=finish-personal">
+              Personal information
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="landing-diversityl?landing-diversity">
+              Diversity
+            </a>
+          </li>
+
+          <li>
+            <a href="landing-character?current=landing-character">
+              Character
+            </a>
+          </li>
+
+        </ul>
+      </div>-->
+
+
+      <div class="govuk-grid-column-three-quarters">
+
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Create an account</span>
+          Diversity information
+        </h1>
+
+        <p class="govuk-body-l"> We'll use these to make sure the judiciary is accessible to all. Read more our <a
+            href="#">commitment to
+            diversity</a>.
+        </p>
+
+        <table class="govuk-table">
+
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Disability</th>
+            <td class="govuk-table__cell"><a href="disability">Add</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Ethnicity</th>
+            <td class="govuk-table__cell"><a href="ethnicity">Add</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Gender</th>
+            <td class="govuk-table__cell"><a href="gender">Add</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Religious beliefs</th>
+            <td class="govuk-table__cell"><a href="religion">Add</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Sexual orientation</th>
+            <td class="govuk-table__cell"><a href="orientation">Add</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Social mobility</th>
+            <td class="govuk-table__cell"><a href="social">Add</a></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <button type="submit" disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled"
+          data-module="govuk-button">
+          Add character information
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,175 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+
+
+    <!--PAGE TITLE-->
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full" style="text-align:right">
+        <p class="govuk-body"><a href="#">Sign out</a></p>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+
+      <!--SIDE NAV-->
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-overview?current=tab-overview">
+              Overview
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="tab-personal-details?current=tab-personal-details">
+              Personal details
+            </a>
+          </li>
+          <li>
+            <a href="tab-diversity?current=tab-diversity">
+              Diversity
+            </a>
+          </li>
+          <li>
+            <a href="tab-character?current=tab-character">
+              Character
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <!--HEADER-->
+        <h1 class="govuk-heading-xl">Applications</h1>
+
+        <!--GREY PANEL-->
+        <h2 class="govuk-heading-l">Current applications</h2>
+
+        <div class="govuk-panel--s govuk-panel--grey">
+          <p class="govuk-body govuk-!-font-size-27">114 Judge of the First-tier Tribunal for England and
+            Wales</p>
+          <p class="govuk-body"><a href="../../check-eligibility/v1-6-tribunal/job-advert.html">View job advert</a></p>
+
+        </div>
+        <!--BLUE PANEL-->
+
+        <!--TABLE-->
+        <div class="govuk-grid-column-two-thirds">
+          <h3 class="govuk-heading-m">Submitted application documents</h3>
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a
+                  href="../../apply-pre-shortlisting//v1-2-court/form-personal.html">Application form</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#">Diversity information</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+
+              <td class="govuk-table__cell"><a href="#">Character information</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="name">Contact details</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+        <!--TIMELINE-->
+        <div class="govuk-grid-column-one-third">
+          <div class="govuk-panel--s govuk-panel--highlight">
+            <span class="govuk-panel__body">Qualifying tests</span>
+            <span class="govuk-panel__body">2 November 2019</span>
+          </div>
+
+
+          <ol class="dwp-timeline govuk-list">
+
+            <li class="dwp-timeline__entry" style="margin-top: 0px;">
+              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Test outcome</h3>
+              <p class="dwp-timeline__info"><span class="dwp-timeline__date">End of November 2019</span></p>
+            </li>
+            <li class="dwp-timeline__entry" style="margin-top: 0px;">
+              <h3 class="govuk-heading-s" style="margin-bottom: 5px;">Selection days</h3>
+              <p class="dwp-timeline__info"><span class="dwp-timeline__date">22 to 24 November 2019, London. 28 to 30
+                  November 2019, Birmingham
+
+                </span></p>
+            </li>
+          </ol>
+        </div>
+
+        <br>
+
+        <div class="govuk-grid-column-three-quarters">
+
+          <h2 class="govuk-heading-l">Previous applications</h2>
+
+
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="../../apply-pre-shortlisting//v1-2-court/form-personal.html">086
+                  Circuit judge</a></td>
+              <td class="govuk-table__cell">Closed 17 February 2018</td>
+              <td class="govuk-table__cell">Selected</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="../../apply-pre-shortlisting//v1-2-court/form-personal.html">086
+                  Recorder</a></td>
+              <td class="govuk-table__cell">Closed 12 April 2017</td>
+              <td class="govuk-table__cell">Not selected</td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+
+
+
+
+  </main>
+</div>
+</div>
+
+</main>
+
+
+
+
+
+<!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

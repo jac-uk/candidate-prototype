@@ -1,0 +1,108 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="finish-personal" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h2 class="govuk-heading-l"></h2>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter" style="text-align:right">
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+
+      <div class="govuk-grid-row">
+
+        <!--SIDE NAV
+        <div class="govuk-grid-column-one-quarter">
+          <ul class="dwp-vertical-navigation">
+           <li>
+              SIDE NAV<a href="tab-overview?current=tab-overview">
+              </a>
+            </li>
+            <li>
+              <a href="no-applications?current=no-applications">
+                Applications
+              </a>
+            </li>
+            <li>
+              <a aria-current="page" href="tab-ask-personal?current=ask-personal">
+                Personal details
+              </a>
+            </li>
+            <li>
+              <a href="ask-diversity?current=ask-diversity">
+                Diversity
+              </a>
+            </li>
+            <li>
+              <a href="ask-character?current=ask-character">
+                Character
+              </a>
+            </li>
+
+          </ul>
+        </div>
+-->
+        <div class="govuk-grid-column-three-quarters">
+
+
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Create an account</span>
+            National Insurance number
+          </h1>
+
+
+
+
+
+
+          <div class="govuk-form-group">
+            <span id="national-insurance-number-hint" class="govuk-hint">
+              It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
+            </span>
+            <input class="govuk-input" id="full-name" name="full-name" type="text" autocomplete="name"
+              spellcheck="false">
+          </div>
+
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+
+  <!--END MAIN WRAPPER-->
+</div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
