@@ -85,131 +85,146 @@ Add new exercise
                 <div
                   class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
                   id="judge-conditional-no">
-                  <div class="govuk-form-group">
+                  <div class="govuk-form-group" style="margin-bottom:20px;">
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">
                           Have you ever held a similar role on a quasi-judicial body</a>?
                         </h1>
                       </legend>
-                      <details class="govuk-details" data-module="govuk-details">
-                        <summary class="govuk-details__summary">
-                          <span class="govuk-details__summary-text">
-                            More about quasi-judicial bodies
-                          </span>
-                        </summary>
-                        <div class="govuk-details__text">
-
-                          <p class="govuk-body">Quasi-judicial bodies have powers and procedures similar to those of
-                            courts. For example,
-                            determining facts and making decisions. </p>
-                          <p class="govuk-body">Examples of quasi-judicial bodies include:</p>
-                          <ul class="govuk-list govuk-list--bullet">
-                            <li>Coroner</li>
-                            <li>Parole Board</li>
-                            <li>Chair of a statutory inquiry</li>
-
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="equivalent-input-yes" name="equivalent-input"
+                            type="radio" value="england" data-aria-controls="equivalent-yes">
+                          <label class="govuk-label govuk-radios__label" for="equivalent-input">
+                            Yes
+                          </label>
                         </div>
-                      </details>
-                      <div
-                        class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                        id="equivalent-yes">
-                        <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Do you have at least 30 sitting days?
-                              </h1>
-                            </legend>
-                            <div class="govuk-radios">
-                              <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                                  type="radio" value="england">
-                                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                                  Yes
-                                </label>
-                              </div>
-                              <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
-                                  type="radio" value="scotland" data-aria-controls="equivalent-sitting-days-no">
-                                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                                  No
-                                </label>
-                              </div>
-                          </fieldset>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="equivalent-input-no" name="equivalent-input"
+                            type="radio" value="scotland" data-aria-controls="equivalent-no"> <label
+                            class="govuk-label govuk-radios__label" for="equivalent-input-3">
+                            No
+                          </label>
                         </div>
-                      </div>
+                    </fieldset>
+                  </div>
+                  <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        More about quasi-judicial bodies
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
 
-                      <div
-                        class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                        id="equivalent-no">
-                        <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Explain how you've gained significant judicial experience.
-                              </h1>
-                              <div class="govuk-form-group">
-                                <label class="govuk-label" for="more-detail">
-                                </label>
+                      <p class="govuk-body">Quasi-judicial bodies have powers and procedures similar to those of
+                        courts. For example,
+                        determining facts and making decisions. </p>
+                      <p class="govuk-body">Examples of quasi-judicial bodies include:</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                        <li>Coroner</li>
+                        <li>Parole Board</li>
+                        <li>Chair of a statutory inquiry</li>
+                    </div>
+                  </details>
+                </div>
 
-                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                                  aria-describedby="more-detail-hint"></textarea>
-                              </div>
-                          </fieldset>
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="equivalent-yes">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Do you have at least 30 sitting days?
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
+                            type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            Yes
+                          </label>
                         </div>
-                      </div>
-
-
-
-
-                      <div
-                        class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                        id="equivalent-sitting-days-no">
-                        <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Explain how you've gained significant judicial experience.
-                              </h1>
-                              <div class="govuk-form-group">
-                                <label class="govuk-label" for="more-detail">
-                                </label>
-
-                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                                  aria-describedby="more-detail-hint"></textarea>
-                              </div>
-                          </fieldset>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
+                            type="radio" value="scotland" data-aria-controls="equivalent-sitting-days-no">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                            No
+                          </label>
                         </div>
-                      </div>
-
-
-
-                      <div
-                        class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                        id="sitting-days-no">
-                        <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Explain how you've gained significant judicial experience.
-                              </h1>
-                              <div class="govuk-form-group">
-                                <label class="govuk-label" for="more-detail">
-                                </label>
-
-                                <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                                  aria-describedby="more-detail-hint"></textarea>
-                              </div>
-                          </fieldset>
-                        </div>
-                      </div>
-
+                    </fieldset>
                   </div>
                 </div>
-            </fieldset>
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="equivalent-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Explain how you've gained significant judicial experience.
+                        </h1>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                          </label>
+
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                            aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                    </fieldset>
+                  </div>
+                </div>
 
 
+
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="equivalent-sitting-days-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Explain how you've gained significant judicial experience.
+                        </h1>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                          </label>
+
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                            aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+
+
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="sitting-days-no">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Explain how you've gained significant judicial experience.
+                        </h1>
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="more-detail">
+                          </label>
+
+                          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                            aria-describedby="more-detail-hint"></textarea>
+                        </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+              </div>
           </div>
 
 
