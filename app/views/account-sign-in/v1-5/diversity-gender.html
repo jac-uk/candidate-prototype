@@ -1,0 +1,139 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="diversity-religion" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h2 class="govuk-heading-l"></h2>
+
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+          <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Diversity information</span>
+            Gender
+          </h1>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  What gender are you?
+                </h2>
+              </legend>
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-0" name="gender" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="gender-0">
+                    Prefer not to say
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-1" name="gender" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="gender-1">
+                    Female
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-2" name="gender" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="gender-2">
+                    Male
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="gender-3" name="gender" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="gender-3">
+                    Gender neutral
+                  </label>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+
+          <main class="govuk-main-wrapper">
+            <form class="form" action="form-gender-id" method="post">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                  <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                    Have you ever changed gender?
+                  </h2>
+                  <!--RADIO GROUP-->
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+                      </legend>
+                      <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="gender-0" name="gender" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="gender-0">
+                            Prefer not to say
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="gender-1" name="gender" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="gender-1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="gender-2" name="gender" type="radio" value="scotland">
+                          <label class="govuk-label govuk-radios__label" for="gender-2">
+                            No
+                          </label>
+                        </div>
+
+                      </div>
+                    </fieldset>
+                  </div>
+
+
+
+
+                  <button class="govuk-button" data-module="govuk-button">
+                    Save and continue
+                  </button>
+
+                </div>
+              </div>
+
+          </main>
+
+
+
+
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="tab-applications-working" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full" style="text-align:left">
+
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+
+        </div>
+
+
+        <!--SIDE NAV
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a href="tab-personal-details?current=tab-personal-details">
+              Personal details
+            </a>
+          </li>
+          <li>
+            <a href="tab-diversity?current=tab-diversity">
+              Diversity information
+            </a>
+          </li>
+          <li>
+            <a href="tab-character?current=tab-character">
+              Character information
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-working?current=tab-working">
+              Working preferences
+            </a>
+          </li>
+        </ul>
+      </div>
+      -->
+
+        <div class="govuk-grid-column-full">
+
+          <!--LINK-->
+          <div style="text-align: right;">
+            <a href="working-preferences" class="govuk-body">Update working preferences</a>
+          </div>
+
+          <!--HEADER-->
+          <h2 class="govuk-heading-l">Working preferences</h2>
+          <p class="govuk-body-l">This information will also be saved to your account profile so you can
+            reuse it in future applications.</p>
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Are you interested in salaried part-time working?
+              </th>
+              <td class="govuk-table__cell">No</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

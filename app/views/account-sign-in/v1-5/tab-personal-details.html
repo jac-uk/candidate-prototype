@@ -1,0 +1,102 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="tab-applications-personal" method="post">
+
+
+      <!--PAGE TITLE-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full" style="text-align:left">
+          <p class="govuk-body"><a href="#">Sign out</a></p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+
+        <!--SIDE NAV
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="dwp-vertical-navigation">
+          <li>
+            <a href="tab-applications?current=tab-applications">
+              Applications
+            </a>
+          </li>
+          <li>
+            <a aria-current="page" href="tab-personal-details?current=tab-personal-details">
+              Personal details
+            </a>
+          </li>
+          <li>
+            <a href="tab-diversity?current=tab-diversity">
+              Diversity information
+            </a>
+          </li>
+          <li>
+            <a href="tab-character?current=tab-character">
+              Character information
+            </a>
+          </li>
+          <li>
+            <a href="tab-working?current=tab-working">
+              Working preferences
+            </a>
+          </li>
+        </ul>
+      </div>-->
+
+        <div class="govuk-grid-column-full">
+
+          <!--LINK-->
+          <div style="text-align: right;">
+            <a href="personal-combined" class="govuk-body">Update personal details</a>
+          </div>
+
+          <!--HEADER-->
+          <h2 class="govuk-heading-l">Personal details</h2>
+          <p class="govuk-body-l">This information will also be saved to your account profile so you can
+            reuse it in future applications.</p>
+          <!--TABLE-->
+          <table class="govuk-table">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Name</th>
+              <td class="govuk-table__cell">Eli Webb</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Email address</th>
+              <td class="govuk-table__cell">eli.webb@hotmail.com</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of birth</th>
+              <td class="govuk-table__cell">25 10 1979</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">National Insurance number</th>
+              <td class="govuk-table__cell">MY928561B</td>
+            </tr>
+            </tbody>
+          </table>
+          <button class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
