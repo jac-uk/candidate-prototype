@@ -1,0 +1,82 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre-finished" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <span class="govuk-caption-xl">092 Registrar of Criminal Appeals, Master of the Crown Office and Queen’s
+            Coroner
+            &
+            Attorney</span>
+          <br>
+          <h1 class="govuk-heading-xl">
+            Self-assessment competencies
+          </h1>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                About self-assessment competency statements
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              We'll assess the information you give against the <a href="#">competency framework</a>. This helps us
+              decide if you're suitable for this role.
+            </div>
+          </details>
+
+          <p class="govuk-body"> Write all 5 self-assessment competency statements in this template. Come back to this
+            page to upload your finished statements.</p>
+
+          <label class="govuk-label govuk-label--m" for="file-upload-1">
+            Download statements template
+          </label>
+          <p class="govuk-body"><a href="#">Download template</a></p>
+          <br>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="file-upload-1">
+              Upload finished statements
+            </label>
+
+
+
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+              aria-describedby="file-upload-1-hint">
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!--BUTTON-->
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Save and continue
+      </button>
+
+      <!--END MAIN WRAPPER-->
+</div>
+</div>
+</form>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
