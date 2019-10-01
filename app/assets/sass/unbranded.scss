@@ -536,6 +536,7 @@ code {
 
 .app-task-list__section {
   display: table;
+  color: #0b0c0c;
   @include govuk-font($size:24, $weight: bold);
 }
 
@@ -573,6 +574,7 @@ code {
 
 .app-task-list__task-name {
   display: block;
+  font-weight: bold;
 
   @include govuk-media-query($from: 450px) {
     float: left;
