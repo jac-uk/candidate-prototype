@@ -13,13 +13,18 @@ Sign in
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-grid-column-full">
         <div style="text-align:right;">
           <a href="#" class="govuk-button govuk-button--secondary">
             Sign out
           </a>
         </div>
+      </div>
+
+      <!--MAIN WRAPPER-->
+      <div class="govuk-grid-column-two-thirds">
+
 
         <!--PAGE TITLE-->
         <span class="govuk-caption-xl">042 Recorder</span>
@@ -37,8 +42,7 @@ Sign in
                     Read about the role
                   </a>
                 </span>
-                <strong class="govuk-tag app-task-list__task-completed"
-                  id="medical-information-completed">Completed</strong>
+                <strong class="govuk-tag app-task-list__task-completed" id="medical-information-completed">Done</strong>
               </li>
               <li class="app-task-list__item">
                 <span class="app-task-list__task-name">
@@ -46,62 +50,40 @@ Sign in
                     Check eligibility
                   </a>
                 </span>
-                <strong class="govuk-tag app-task-list__task-completed"
-                  id="medical-information-completed">Completed</strong>
+                <strong class="govuk-tag app-task-list__task-completed" id="medical-information-completed">Done</strong>
               </li>
             </ul>
           </li>
           <li>
             <h2 class="app-task-list__section">
-              <span class="app-task-list__section-number">2. </span> Provide your personal information
+              <span class="app-task-list__section-number">2. </span> Complete your profile
             </h2>
             <ul class="app-task-list__items">
               <li class="app-task-list__item">
                 <span class="app-task-list__task-name">
                   <a href="personal-combined" aria-describedby="eligibility-completed">
-                    Your personal information
-                  </a>
-                </span>
-              </li>
-              <li class="app-task-list__item">
-                <span class="app-task-list__task-name">
-                  <a href="diversity-disability.html" aria-describedby="read-declaration-completed">
-                    Diversity information
-                  </a>
-                </span>
-              </li>
-              <li class="app-task-list__item">
-                <span class="app-task-list__task-name">
-                  <a href="profile-character.html" aria-describedby="read-declaration-completed">
-                    Character information
+                    Provide personal details
                   </a>
                 </span>
               </li>
               <li class="app-task-list__item">
                 <span class="app-task-list__task-name">
                   <a href="working-preferences.html" aria-describedby="read-declaration-completed">
-                    Working preferences
+                    Set your working preferences
                   </a>
                 </span>
               </li>
               <li class="app-task-list__item">
                 <span class="app-task-list__task-name">
-                  <a href="#">
-                    List convictions
+                  <a href="profile-character.html" aria-describedby="read-declaration-completed">
+                    Declare character information
                   </a>
                 </span>
               </li>
               <li class="app-task-list__item">
                 <span class="app-task-list__task-name">
-                  <a href="#">
-                    Provide financial evidence
-                  </a>
-                </span>
-              </li>
-              <li class="app-task-list__item">
-                <span class="app-task-list__task-name">
-                  <a href="#" aria-describedby="medical-information-completed">
-                    Give medical information
+                  <a href="profile-diversity.html" aria-describedby="read-declaration-completed">
+                    Complete the equality and diversity survey
                   </a>
                 </span>
               </li>
@@ -172,22 +154,12 @@ Sign in
           </li>
         </ol>
 
+        <!--END MAIN WRAPPER-->
       </div>
     </div>
+  </main>
 
-
-
-
-
-
-
-
-    <!--END MAIN WRAPPER-->
-</div>
-</div>
-</main>
-
-{% include "includes/footer.html" %}
+  {% include "includes/footer.html" %}
 
 </div>
 
