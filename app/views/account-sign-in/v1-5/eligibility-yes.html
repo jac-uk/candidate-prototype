@@ -17,23 +17,18 @@ Sign in
         <span class="govuk-caption-xl">042 Recorder</span>
         <h1 class="govuk-heading-xl">It looks like you're eligible </h1>
         <div class="govuk-form-group">
-          <p class="govuk-body">Based on your answers, it looks like you can apply for this role.</p>
+          <p class="govuk-body">Based on your answers, it looks like you can continue to apply for this role.</p>
 
-          <h2 class="govuk-heading-m">What happens next</h2>
-
-          <p class="govuk-body">You'll need to sign in or create an account to apply.</p>
 
 
         </div>
         <a href="sign-in" class="govuk-button">
-          Sign in or create an account
+          Sign in
         </a>
+        <p class="govuk-body">Or <a href="sign-up.html">create an account</a> if you do not have one.</p>
+        <p class="govuk-body">You'll then be able to see the status of applications in
+          progress, and save information for future applications.</p>
       </div>
     </div>
-  </main>
-
-  {% include "includes/footer.html" %}
-
-</div>
-
-{% endblock %}
+  </main> {% include "includes/footer.html" %}
+</div> {% endblock %}
