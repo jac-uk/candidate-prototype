@@ -37,30 +37,80 @@ Add new exercise
                     Advocate - Scotland
                   </label>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
-                    data-aria-controls="conditional-what-qual-2">
-                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
-                    Barrister
-                  </label>
+
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
+                      value="email" data-aria-controls="judge-conditional-yes">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                      Barrister
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
+                      data-aria-controls="conditional-what-qual-2">
+                    <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                      Fellow of the Chartered Institute of Legal Executives (CILEx)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
+                      data-aria-controls="conditional-what-qual-2">
+                    <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                      Solicitor
+                    </label>
+                  </div>
                 </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
-                    data-aria-controls="conditional-what-qual-2">
-                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
-                    Fellow of the Chartered Institute of Legal Executives (CILEx)
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
-                    data-aria-controls="conditional-what-qual-2">
-                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
-                    Solicitor
-                  </label>
-                </div>
-              </div>
+                <div
+                  class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                  id="judge-conditional-yes">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                        <h1 class="govuk-fieldset__heading">
+                          Have you completed pupillage?
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
+                            type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
+                            type="radio" value="scotland" data-aria-controls="sitting-days-no">
+                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                            No
+                          </label>
+                        </div>
+                        <div
+                          class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
+                          id="sitting-days-no">
+                          <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset">
+                              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <h1 class="govuk-fieldset__heading">
+                                  Explain why you did not complete pupillage.
+                                </h1>
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label" for="more-detail">
+                                  </label>
+
+                                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                                    aria-describedby="more-detail-hint"></textarea>
+                                </div>
+                            </fieldset>
+                          </div>
+                        </div>
+                    </fieldset>
+                  </div>
             </fieldset>
           </div>
+
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="where-qual-conditional-hint">
