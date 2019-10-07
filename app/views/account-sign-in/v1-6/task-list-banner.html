@@ -1,0 +1,196 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+
+
+      <div class="govuk-grid-column-full">
+        <div class="govuk-panel govuk-panel--purple"
+          style="margin-top:-40px; margin-bottom: 60px; padding-left:15px; padding-top:10px; padding-bottom:0">
+          <h1 class="govuk-panel__body" style="margin-bottom:0;">
+            <strong>Account created</strong>
+          </h1>
+        </div>
+        <div style="text-align:left">
+          <span class="govuk-caption-xl">Eli Webb</span>
+        </div>
+      </div>
+      <div style="text-align:right;">
+        <a href="#" class="govuk-button govuk-button--secondary">
+          Sign out
+        </a>
+      </div>
+
+
+      <!--MAIN WRAPPER-->
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <!--PAGE TITLE-->
+        <span class="govuk-caption-xl">042 Recorder</span>
+        <h1 class="govuk-heading-xl">Apply for the role</h1>
+
+        <ol class="app-task-list">
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">1. </span>Eligibility
+            </h2>
+            <ul class="app-task-list__items">
+              <!--<li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="job-advert" target="_blank" aria-describedby="eligibility-completed">
+                    Read about the role
+                  </a>
+                </span>
+                <strong class="govuk-tag app-task-list__task-completed" id="medical-information-completed">Done</strong>
+              </li>-->
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="eligibility-page" target="_blank" aria-describedby="read-declaration-completed">
+                    Complete eligibility checklist
+                  </a>
+                </span>
+                <strong class="govuk-tag app-task-list__task-completed" id="medical-information-completed">Done</strong>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">2. </span> Account profile
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="profile-personal" aria-describedby="eligibility-completed">
+                    Add personal details
+                  </a>
+                </span>
+              </li>
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="profile-character.html" aria-describedby="read-declaration-completed">
+                    Declare character information
+                  </a>
+                </span>
+              </li>
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="profile-diversity.html" aria-describedby="read-declaration-completed">
+                    Take the equality and diversity survey
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">3. </span> Working preferences
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="profile-working.html" aria-describedby="read-declaration-completed">
+                    Set part-time working preferences
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">4. </span> Qualifications and experience
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-qualifications" aria-describedby="company-information-completed">
+                    Add relevant qualifications
+                  </a>
+                </span>
+              </li>
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-experience" aria-describedby="contact-details-completed">
+                    Add post-qualification work experience
+                  </a>
+                </span>
+              </li>
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-pje" aria-describedby="contact-details-completed">
+                    Add judicial experience
+                  </a>
+                </span>
+              </li>
+
+              <!--<li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-pje" aria-describedby="contact-details-completed">
+                    Judicial experience
+                  </a>
+                </span>
+              </li>-->
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">5. </span> Assessments
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-independent-assessors" aria-describedby="contact-details-completed">
+                    Give independent assessors' details
+                  </a>
+                </span>
+              </li>
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-competencies">
+                    Upload self-assessment competencies
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="app-task-list__section">
+              <span class="app-task-list__section-number">6. </span> Apply
+            </h2>
+            <ul class="app-task-list__items">
+              <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="form-check-answers">
+                    Review application
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+
+      <!--END MAIN WRAPPER-->
+    </div>
+</div>
+</main>
+
+{% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

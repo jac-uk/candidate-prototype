@@ -1,0 +1,151 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-width-container">
+          <form class="form" action="eligibility-yes" method="post">
+            <span class="govuk-caption-xl">042 Recorder</span>
+            <h1 class="govuk-heading-xl">Complete eligibility checklist</h1>
+            <p class="govuk-body-l">If you cannot meet all the requirements, you can still apply but it could mean
+              you’re
+              unlikely to be offered a position.
+            </p>
+            <h2 class="govuk-heading-l">Qualifications and experience</h2>
+            <p><strong> Are you a UK-qualified advocate (Scotland), barrister, fellow of CILEx or solicitor with at
+                least 5
+                years
+                of post-qualification <a href="https://www.judicialappointments.gov.uk/eligibility-tribunals"
+                  target="_blank">
+                  law-related work experience</a>?</strong></p>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="quals" name="quals" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="quals">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="quals-2" name="quals" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="quals-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <h2 class="govuk-heading-l">Character</h2>
+            <p><strong>Are there any issues about your <a href="https://www.judicialappointments.gov.uk/good-character"
+                  target="_blank">character</a> that could
+                affect your suitability for this role?
+              </strong></p>
+            <!--RADIO GROUP-->
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character" name="character" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="character">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-2" name="character" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="character-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <!--END RADIO GROUP-->
+
+
+            <h2 class="govuk-heading-l">Working years before retirement</h2>
+            <p><strong>Can you work for at least 4 years before reaching the retirement age of 70?
+              </strong></p>
+            <!--RADIO GROUP-->
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="rsl" name="rsl" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="rsl">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="rsl-2" name="rsl" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="rsl-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <!--END RADIO GROUP-->
+
+            <h2 class="govuk-heading-l">Citizenship</h2>
+            <p><strong>Are you a citizen of the UK, the Republic of Ireland or another Commonwealth country?
+              </strong></p>
+            <!--RADIO GROUP-->
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                </legend>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="citizenship" name="citizenship" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="citizenship">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="citizenship-2" name="citizenship" type="radio"
+                      value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="citizenship-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <!--END RADIO GROUP-->
+
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Confirm your answers
+            </button>
+            <br>
+            <a href="eligibility-no">No</a>
+
+            <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}

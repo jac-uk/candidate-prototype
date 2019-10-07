@@ -1,0 +1,37 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">042 Recorder</span>
+        <h1 class="govuk-heading-xl">It looks like you're eligible </h1>
+        <div class="govuk-form-group">
+          <p class="govuk-body">Based on your answers, it looks like you can continue to apply for this role.</p>
+
+
+
+        </div>
+        <a href="sign-in" class="govuk-button">
+          Sign in
+        </a>
+        <p class="govuk-body">Or <a href="sign-up.html">create an account</a> if you do not have one.</p>
+
+
+        <!--MAIN WRAPPER
+        <p class="govuk-body">You'll then be able to see the status of applications in
+          progress, and save information for future applications.</p>-->
+      </div>
+    </div>
+  </main> {% include "includes/footer.html" %}
+</div> {% endblock %}

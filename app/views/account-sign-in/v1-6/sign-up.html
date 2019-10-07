@@ -1,0 +1,76 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Sign in
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="confirm-email" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Create an account
+          </h1>
+
+          <!--TEXT INPUT-->
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Full name
+            </label>
+            <span id="passport-issued-hint" class="govuk-hint">
+              You do not need to include any titles.
+            </span>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Email address
+            </label>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Confirm your email address
+            </label>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+
+          </div>
+
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+          <p>
+
+          </p>
+          <p>
+
+
+            <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
