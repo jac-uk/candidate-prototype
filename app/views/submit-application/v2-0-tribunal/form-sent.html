@@ -1,0 +1,67 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-form-group">
+            <div class="govuk-panel govuk-panel--purple">
+              <h1 class="govuk-panel__title">
+                Application sent
+              </h1>
+              <div class="govuk-panel__body">
+                <br>
+                Reference number<br><strong>HDJ2123F</strong>
+
+              </div>
+              <br>
+              You've applied for 114 Judge of the First-tier Tribunal for England and Wales.
+              <br>
+              <br>
+              We've sent a confirmation email to eli.webb@hotmail.com. </p>
+            </div>
+          </div>
+
+          <div class="govuk-form-group">
+            <h2 class="govuk-heading-m">What happens next</h2>
+            <p class="govuk-body">
+              You'll need to take your qualifying tests on 2 November 2019.</p>
+            <p class="govuk-body">
+              We'll email you on 26 October with the test instructions.
+            </p>
+            <p class="govuk-body">If you need us to make any <a
+                href="https://www.judicialappointments.gov.uk/reasonable-adjustments-policy" target="_blank">
+                reasonable adjustments</a> so you can take the tests,
+              email us at 114@jac.gov.uk, quoting your reference number, HDJ2123F. </p>
+          </div>
+          <!--BUTTON-->
+          <a href="https://www.judicialappointments.gov.uk/" role="button" draggable="false"
+            class="govuk-button govuk-button--start" data-module="govuk-button">
+            Back to JAC homepage
+
+          </a>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+      </form>
+    </main>
+
+    {% include "includes/footer.html" %}
+
+  </div>
+
+  {% endblock %}
