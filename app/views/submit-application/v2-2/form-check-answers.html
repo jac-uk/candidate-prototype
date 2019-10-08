@@ -14,36 +14,40 @@ Add new exercise
   <form class="form" action="form-sent" method="post">
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds-from-desktop">
+      <div class="govuk-grid-column-full">
         <h1 class="govuk-heading-xl">Review your application</h1>
 
         <!--PERSONAL DETAILS-->
-        <h3 class="govuk-heading-m">Personal details</h3>
+        <table width="100%">
+          <tr>
+            <td>
+              <h3 class="govuk-heading-l" style="margin-left:-4px;">
+                Personal details</h3>
+            </td>
+            <td>
+              <div class="govuk-summary-list--change">
+                <a class="govuk-link govuk-body" href="#">
+                  Change<span class="govuk-visually-hidden"> personal details</span>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Name
+              Full name
             </dt>
             <dd class="govuk-summary-list__value">
-              Eli Webb
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
-              </a>
+              Roma Mcloughlin-Downes
             </dd>
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Email
+              Email address
             </dt>
             <dd class="govuk-summary-list__value">
-              eli.webb@hotmail.com
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> address</span>
-              </a>
+              roma.mcloughlin-downes117@example.com
             </dd>
           </div>
           <div class="govuk-summary-list__row">
@@ -51,60 +55,31 @@ Add new exercise
               Date of birth
             </dt>
             <dd class="govuk-summary-list__value">
-              25 10 1979
+              01 01 1953
             </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
-              </a>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              NI number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              QQ123456C
             </dd>
           </div>
         </dl>
         <!--END PERSONAL DETAILS-->
 
         <!--QUALIFICATIONS-->
-        <h3 class="govuk-heading-m">Qualifications</h3>
         <table width="100%">
           <tr>
             <td>
-              <h3 class="govuk-heading-s" style="margin-bottom:0;">
-                First qualification
-              </h3>
+              <h3 class="govuk-heading-l" style="margin-left:-4px;">
+                Qualifications</h3>
             </td>
             <td>
-              <div style="text-align: right;">
+              <div class="govuk-summary-list--change">
                 <a class="govuk-link govuk-body" href="#">
-                  Change<span class="govuk-visually-hidden"> role</span>
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-4">
-          <div class="govuk-summary-list__row">
-            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              What you're qualified as</dd>
-            <dd class="govuk-summary-list__value">
-              Barrister</dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Where you're qualified</dd>
-            <dd class="govuk-summary-list__value">
-              Northern Ireland</dd>
-          </div>
-        </dl>
-        <table width="100%">
-          <tr>
-            <td>
-              <h3 class="govuk-heading-s" style="margin-bottom:0;">
-                Second qualification
-              </h3>
-            </td>
-            <td>
-              <div style="text-align: right;">
-                <a class="govuk-link govuk-body" href="#">
-                  Change<span class="govuk-visually-hidden"> role</span>
+                  Change<span class="govuk-visually-hidden"> qualifications</span>
                 </a>
               </div>
             </td>
@@ -113,47 +88,62 @@ Add new exercise
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              What you're qualified as</dd>
+              Qualification</dd>
+            <dd class="govuk-summary-list__value">
+              Barrister</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Location</dd>
+            <dd class="govuk-summary-list__value">
+              Northern Ireland</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Date qualified</dd>
+            <dd class="govuk-summary-list__value">
+              September 1995</dd>
+          </div>
+        </dl>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Qualification</dd>
             <dd class="govuk-summary-list__value">
               Solicitor</dd>
           </div>
           <div class="govuk-summary-list__row">
             <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Where you're qualified</dd>
+              Location</dd>
             <dd class="govuk-summary-list__value">
               England and Wales</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Date qualified</dd>
+            <dd class="govuk-summary-list__value">
+              April 2006</dd>
           </div>
         </dl>
         <!--END QUALIFICATIONS-->
 
         <!--WORK EXPERIENCE-->
-        <h2 class="govuk-heading-m">
-          Legal work experience</h2>
         <table width="100%">
           <tr>
             <td>
-              <h3 class="govuk-heading-s" style="margin-bottom:0;">
-                First role</h3>
+              <h3 class="govuk-heading-l" style="margin-left:-4px;">
+                Legal work experience</h3>
             </td>
             <td>
-              <div style="text-align: right;">
+              <div class="govuk-summary-list--change">
                 <a class="govuk-link govuk-body" href="#">
-                  Change<span class="govuk-visually-hidden"> role</span>
+                  Change<span class="govuk-visually-hidden"> personal details</span>
                 </a>
               </div>
             </td>
           </tr>
         </table>
-        <dl class="govuk-summary-list govuk-!-margin-bottom-4">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Dates worked
-            </dt>
-            <dd class="govuk-summary-list__value">
-              27 June 2013 to 17 February 2016<br>
-              2 years 8 months
-            </dd>
-          </div>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
               Job title
@@ -164,7 +154,7 @@ Add new exercise
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Organisation or business name
+              Organisation or business
             </dt>
             <dd class="govuk-summary-list__value">
               Naughton Court Chambers
@@ -172,41 +162,25 @@ Add new exercise
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Law-related tasks in this role
+              Dates worked
+            </dt>
+            <dd class="govuk-summary-list__value">
+              From 27 June 2013 to 17 February 2016
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Law-related tasks
             </dt>
             <dd class="govuk-summary-list__value">
               <ul class="govuk-list govuk-list--bullet">
-                <li>Carrying out judicial functions in a court or tribunal</li>
-                <li>Drafting rights or obligations documents</li>
+                <li>The carrying-out of judicial functions of any court or tribunal</li>
+                <li>Drafting documents intended to affect persons' rights or obligations</li>
               </ul>
             </dd>
           </div>
         </dl>
-        <table width="100%">
-          <tr>
-            <td>
-              <h3 class="govuk-heading-s" style="margin-bottom:0;">
-                Second role</h3>
-            </td>
-            <td>
-              <div style="text-align: right;">
-                <a class="govuk-link govuk-body" href="#">
-                  Change<span class="govuk-visually-hidden"> role</span>
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Dates worked
-            </dt>
-            <dd class="govuk-summary-list__value">
-              27 June 2013 to 17 February 2016<br>
-              2 years 8 months
-            </dd>
-          </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
               Job title
@@ -217,7 +191,7 @@ Add new exercise
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Organisation or business name
+              Organisation or business
             </dt>
             <dd class="govuk-summary-list__value">
               Neston, Algernon & Edge
@@ -225,12 +199,20 @@ Add new exercise
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
-              Law-related tasks in this role
+              Dates worked
+            </dt>
+            <dd class="govuk-summary-list__value">
+              27 June 2013 to 17 February 2016
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key govuk-summary-list__key--check-answers">
+              Law-related tasks
             </dt>
             <dd class="govuk-summary-list__value">
               <ul class="govuk-list govuk-list--bullet">
                 <li>Advising on the application of the law</li>
-                <li>Advising on resolution proceedings</li>
+                <li>Assisting persons involved in proceedings for the resolution of issues arising under the law</li>
               </ul>
             </dd>
           </div>
