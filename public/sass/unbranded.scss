@@ -105,6 +105,10 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   color: #0b0c0c;
 }
 
+.govuk-heading-l {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 40.0625em) {
   .govuk-input--search {
     width: 90%;
@@ -289,6 +293,12 @@ code {
   background: #753880;
 }
 
+.govuk-panel--success {
+  color: #0b0c0c;
+  background: #fff;
+  border: 5px solid #00703c;
+}
+
 .govuk-radios__conditional--judicial {
   border-left: 0;
   padding-left: 0;
@@ -297,7 +307,18 @@ code {
 }
 
 .govuk-summary-list__key--check-answers {
-  width: 40%;
+  width: 100%;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-summary-list__key--check-answers {
+    width: 35%;
+  }
+}
+
+.govuk-summary-list--change {
+  margin-bottom: 1rem;
+  text-align: right;
 }
 
 // DWP Timeline pattern
