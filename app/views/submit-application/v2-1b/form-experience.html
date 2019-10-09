@@ -1,0 +1,218 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  {% include "includes/header.html" %}
+
+  <!--MAIN WRAPPER-->
+  <main class="govuk-main-wrapper">
+    <form class="form" action="task-list-pre" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Post-qualification experience
+          </h1>
+          <p class="govuk-body-l">Add details of how you've gained the required amount of <a
+              href="https://www.judicialappointments.gov.uk/eligibility-legally-qualified-candidates" target="_blank">
+              law-related work experience</a> since qualifying, starting with your most recent.</p>
+
+          <!--TEXT INPUT-->
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Job title
+            </label>
+
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label-input" for="event-name">
+              Organisation or business name
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+
+          <!--CHECKBOX GROUP
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                  I'm currently working in this role
+                </label>
+              </div>
+            </fieldset>
+          </div>
+-->
+
+          <!--DATE-->
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                Start date </legend>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="passport-issued-hint" role="group">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                End date </legend>
+              <span id="waste-hint" class="govuk-hint">
+                Leave this blank if you're currently in this role.
+              </span>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month"
+                        name="passport-issued-month" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year"
+                        name="passport-issued-year" type="number" pattern="[0-9]*">
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <label class="govuk-label-input" for="event-name">
+                Law-related tasks in this role
+              </label>
+              <span id="waste-hint" class="govuk-hint">
+                Select all tasks you do in this role. These are defined in the <a
+                  href="http://www.legislation.gov.uk/ukpga/2007/15/section/52" target="_blank"> Tribunals, Courts and
+                  Enforcement Act
+                  2007</a>.
+              </span>
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    The carrying-out of judicial functions of any court or tribunal
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Acting as an arbitrator
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Practice or employment as a lawyer
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Advising on the application of the law
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Assisting persons involved in proceedings for the resolution of
+                    issues arising under the law
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Acting as mediator in connection with attempts to resolve
+                    issues that are, or if not resolved
+                    could be, the subject of proceedings
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Drafting documents intended to affect persons' rights or
+                    obligations
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Teaching or researching law
+                </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox"
+                      value="email" data-aria-controls="conditional-citizenship-conditional">
+                    <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                      None of the above - Any activity that, in the relevant decision-maker's opinion, is
+                      of a broadly similar nature to those listed above
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden"
+                    id="conditional-citizenship-conditional">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label-input" for="contact-by-email">
+                        List your different law-related tasks
+                      </label>
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2"
+                        aria-describedby="more-detail-hint"></textarea>
+                    </div>
+            </fieldset>
+            <div style="margin-top:40px;">
+              <a href="#" class="govuk-button govuk-button--secondary">
+                Add another
+              </a>
+            </div>
+          </div>
+
+          <!--BUTTON-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+      </div>
+    </form>
+  </main>
+
+  {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
