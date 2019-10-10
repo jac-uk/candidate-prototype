@@ -1,0 +1,47 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Add new exercise
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <form class="form" action="task-list-pre" method="post">
+
+
+    {% include "includes/header.html" %}
+
+    <!--MAIN WRAPPER-->
+    <div class="flash-card">
+      <header>
+        <h1 class="govuk-heading-l">New application process</h1>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <p class="govuk-body-l">
+              You’ll need to enter some personal profile information as well as
+              your career history to apply for this role.</p>
+            <p class="govuk-body-l">You'll be able to save and return to this at
+              any time.</p>
+
+            <h2 class="govuk-heading-m">If you already have a JAC account</h2>
+            <p class="govuk-body-l">You’ll still need to apply using this new process.</p>
+            <p class="govuk-body-l">No information from your existing account will be visible when you apply for
+              this role.</p>
+            <p class="govuk-body-l">You can still <a href="https://www.judicialappointments.gov.uk/user">sign into your
+                account</a> to access anything you need for this application, but you cannot apply there.</p>
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Close and continue
+            </button>
+          </div>
+
+          <!--END MAIN WRAPPER-->
+        </div>
+    </div>
+    </main>
+    {% include "includes/footer.html" %}
+
+</div>
+
+{% endblock %}
