@@ -21,59 +21,36 @@ Add new exercise
             Declare character information
           </h1>
           <p class="govuk-body-l">You must tell us about any character issues that could affect
-            your suitability for this role.
-            Read the <a href="https://www.judicialappointments.gov.uk/good-character">character
+            your suitability for this role. </p>
+          <p class="govuk-body-l">Read the <a href="https://www.judicialappointments.gov.uk/good-character">character
               guidance<a> for detailed information. </p>
 
 
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you ever been declared bankrupt?
-                </h2>
-              </legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-bankrupt-conditional" name="character-bankrupt"
-                    type="radio" value="email">
-                  <label class="govuk-label govuk-radios__label" for="character-bankrupt-conditional">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-bankrupt-conditional-2" name="character-bankrupt"
-                      type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-bankrupt-conditional-2">
-                      No
-                    </label>
-                  </div>
-                </div>
-            </fieldset>
-          </div>
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you filed late tax returns, been fined by HMRC or had other financial difficulties
-                  more than 3 times in the last 5 years?
+                  Have you ever been cautioned or convicted of a criminal offence?
                 </h2>
+              </legend>
+              <span id="how-contacted-conditional-hint" class="govuk-hint">
+                This includes spent convictions.</span>
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
-                    value="email" data-aria-controls="conditional-character-tax-conditional">
+                    value="email" data-aria-controls="conditional-character-criminal-conditional">
                   <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-character-tax-conditional">
+                  id="conditional-character-criminal-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of late filling, fines or other difficulties
+                      Add details of cautions or convictions, including dates.
                     </label>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
@@ -95,15 +72,198 @@ Add new exercise
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Are you the subject of a live professional conduct or negligence investigation?
+                  Have you ever received a non-motoring penalty notice?
+                </h2>
+              </legend>
+
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-non-motoring-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-character-non-motoring-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-email">
+                      Add details of non-motoring penalty notices, including dates.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  Have you ever been disqualified from driving, or convicted for driving under the influence of drink or
+                  drugs? </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-driving-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-character-driving-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-email">
+                      Add details of driving disqualifications or convictions, including dates.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  Do you have any endorsements on your licence, or received any motoring fixed-penalty notices? </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-endorsements-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-character-endorsements-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-email">
+                      Add details of driving endorsements or motoring fixed-penalty notices, including dates.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  Have you ever been declared bankrupt? </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-bankruptcy-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-character-bankruptcy-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-email">
+                      Add details of bankruptcy, including dates.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  Have you ever filed late tax returns or been fined my HMRC? </h2>
+              </legend>
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-tax-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
+                  id="conditional-character-tax-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label-input" for="contact-by-email">
+                      Add details of late tax returns or fines, including dates.
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+                      aria-describedby="more-detail-hint"></textarea>
+                  </div>
+                </div>
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
+                      No
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
+                  Have you ever been subject to professional negligence, wrongful dismissal, discrimination or
+                  harassment proceedings?
                 </h2>
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-professional-conditional"
-                    name="character-professional" type="radio" value="email"
-                    data-aria-controls="conditional-character-professional-conditional">
-                  <label class="govuk-label govuk-radios__label" for="character-professional-conditional">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-professional-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                     Yes
                   </label>
                 </div>
@@ -111,7 +271,8 @@ Add new exercise
                   id="conditional-character-professional-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of conduct or negligence investigation
+                      Add details of professional negligence, wrongful dismissal, discrimination or harassment
+                      proceedings, including dates.
                     </label>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
@@ -119,9 +280,9 @@ Add new exercise
                 </div>
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-professional-conditional-2"
-                      name="character-professional" type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-professional-conditional-2">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                       No
                     </label>
                   </div>
@@ -133,23 +294,24 @@ Add new exercise
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you had a motoring offence involving drink or drug driving, or
-                  driving while using a mobile in the last 10 years?
+                  Have you ever been subject to complaints or disciplinary action, or been asked to resign from a
+                  position?
                 </h2>
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-distracted-conditional" name="character-distracted"
-                    type="radio" value="email" data-aria-controls="conditional-character-distracted-conditional-2">
-                  <label class="govuk-label govuk-radios__label" for="character-distracted-conditional">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-disciplinary-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-character-distracted-conditional-2">
+                  id="conditional-character-disciplinary-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of driving offences
+                      Add details of professional complaints, disciplinary action or requests to resign, including
+                      dates.
                     </label>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
@@ -157,122 +319,9 @@ Add new exercise
                 </div>
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-distracted-conditional-2"
-                      name="character-distracted" type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-distracted-conditional-2">
-                      No
-                    </label>
-                  </div>
-                </div>
-            </fieldset>
-          </div>
-
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you been disqualified from driving in the last 5 years?
-                </h2>
-              </legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-years-conditional" name="character-years"
-                    type="radio" value="email" data-aria-controls="conditional-character-years-conditional-3">
-                  <label class="govuk-label govuk-radios__label" for="character-years-conditional">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-character-years-conditional-3">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label-input" for="contact-by-email">
-                      Add details of disqualification
-                    </label>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                      aria-describedby="more-detail-hint"></textarea>
-                  </div>
-                </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-years-conditional-2" name="character-years"
-                      type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-years-conditional-2">
-                      No
-                    </label>
-                  </div>
-                </div>
-            </fieldset>
-          </div>
-
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Do you have any motoring offences and more than 6 points on your
-                  licence?
-                </h2>
-              </legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-points-conditional" name="character-points"
-                    type="radio" value="email" data-aria-controls="conditional-character-points-conditional-4">
-                  <label class="govuk-label govuk-radios__label" for="character-points-conditional">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-character-points-conditional-4">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label-input" for="contact-by-email">
-                      Add details of motoring offences or licence points
-                    </label>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                      aria-describedby="more-detail-hint"></textarea>
-                  </div>
-                </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-points-conditional-2" name="character-points"
-                      type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-points-conditional-2">
-                      No
-                    </label>
-                  </div>
-                </div>
-            </fieldset>
-          </div>
-
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you had a criminal conviction in the last 10 years or a criminal caution in
-                  the last 5 years?
-                </h2>
-              </legend>
-              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-criminal-conditional" name="character-criminal"
-                    type="radio" value="email" data-aria-controls="conditional-character-criminal-conditional">
-                  <label class="govuk-label govuk-radios__label" for="character-criminal-conditional">
-                    Yes
-                  </label>
-                </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="conditional-character-criminal-conditional">
-                  <div class="govuk-form-group">
-                    <label class="govuk-label-input" for="contact-by-email">
-                      Add details of criminal conviction
-                    </label>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                      aria-describedby="more-detail-hint"></textarea>
-                  </div>
-                </div>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-criminal-conditional-2" name="character-criminal"
-                      type="radio" value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-criminal-conditional-2">
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                      value="email">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                       No
                     </label>
                   </div>
@@ -289,17 +338,17 @@ Add new exercise
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="character-conditional" name="character" type="radio"
-                    value="email" data-aria-controls="character-other-conditional">
-                  <label class="govuk-label govuk-radios__label" for="character-conditional">
+                  <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
+                    value="email" data-aria-controls="conditional-character-other-conditional">
+                  <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
-                  id="character-other-conditional">
+                  id="conditional-character-other-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of other character issues
+                      Add details of any other relevant character issues, including dates.
                     </label>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
@@ -307,15 +356,19 @@ Add new exercise
                 </div>
                 <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="character-conditional-2" name="character" type="radio"
+                    <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
                       value="email">
-                    <label class="govuk-label govuk-radios__label" for="character-conditional-2">
+                    <label class="govuk-label govuk-radios__label" for="character-tax-conditional">
                       No
                     </label>
                   </div>
                 </div>
             </fieldset>
           </div>
+
+
+
+
 
           <button class="govuk-button" data-module="govuk-button">
             Save and continue
