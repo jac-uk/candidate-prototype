@@ -1234,3 +1234,67 @@ code {
 .app-step-nav__substep--optional:after {
   border-left-style: dotted;
 }
+
+.flash-card {
+  margin-top: 1em;
+  padding: 30px;
+  background: #005EA5;
+  color: #FFF;
+
+  header {
+    background-color: inherit;
+  }
+
+  p {
+    color: #FFF;
+  }
+
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+
+
+    li {
+      margin-bottom: 22px;
+    }
+  }
+
+  h2.govuk-heading-m {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 28px;
+  }
+
+  h1 {
+    color: #FFF;
+
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+
+  a {
+    color: #FFF;
+
+    &:visited,
+    &:hover,
+    &:active {
+      color: #FFF;
+    }
+  }
+
+  details {
+
+    // margin-bottom: 1em;
+    summary {
+      color: #FFF;
+    }
+
+    .panel {
+      border-left-color: #FFF;
+    }
+  }
+}
