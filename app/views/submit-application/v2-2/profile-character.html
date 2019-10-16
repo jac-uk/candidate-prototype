@@ -50,8 +50,43 @@ Add new exercise
                   id="conditional-character-criminal-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of cautions or convictions, including dates.
+                      Add details of cautions or convictions, including dates, sentence and fine.
                     </label>
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -72,10 +107,9 @@ Add new exercise
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Have you ever received a non-motoring penalty notice?
+                  Have you received a non-motoring penalty notice in the last 4 years?
                 </h2>
               </legend>
-
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="character-tax-conditional" name="character-tax" type="radio"
@@ -84,12 +118,49 @@ Add new exercise
                     Yes
                   </label>
                 </div>
+
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden"
                   id="conditional-character-non-motoring-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of non-motoring penalty notices, including dates.
+                      Add details of non-motoring penalty notices, including nature of offence, fine and dates.
                     </label>
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -105,6 +176,11 @@ Add new exercise
                 </div>
             </fieldset>
           </div>
+
+
+
+
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -125,8 +201,46 @@ Add new exercise
                   id="conditional-character-driving-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of driving disqualifications or convictions, including dates.
+                      Add details of driving disqualifications or convictions, including reason for disqualification,
+                      fine or penalty points and dates.
                     </label>
+
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -143,11 +257,13 @@ Add new exercise
             </fieldset>
           </div>
 
+
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h2 class="govuk-heading-m" style="margin-bottom:0px;">
-                  Do you have any endorsements on your licence, or received any motoring fixed-penalty notices? </h2>
+                  Do you have any endorsements on your licence, or received any motoring fixed-penalty notices in the
+                  last 4 years? </h2>
               </legend>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
@@ -161,8 +277,45 @@ Add new exercise
                   id="conditional-character-endorsements-conditional">
                   <div class="govuk-form-group">
                     <label class="govuk-label-input" for="contact-by-email">
-                      Add details of driving endorsements or motoring fixed-penalty notices, including dates.
+                      Add details of driving endorsements or motoring fixed-penalty notices, including number of
+                      points and dates.
                     </label>
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -199,6 +352,43 @@ Add new exercise
                     <label class="govuk-label-input" for="contact-by-email">
                       Add details of bankruptcy, including dates.
                     </label>
+
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -214,6 +404,8 @@ Add new exercise
                 </div>
             </fieldset>
           </div>
+
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -274,6 +466,43 @@ Add new exercise
                       Add details of professional negligence, wrongful dismissal, discrimination or harassment
                       proceedings, including dates.
                     </label>
+
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
@@ -289,6 +518,7 @@ Add new exercise
                 </div>
             </fieldset>
           </div>
+
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -350,6 +580,44 @@ Add new exercise
                     <label class="govuk-label-input" for="contact-by-email">
                       Add details of any other relevant character issues, including dates.
                     </label>
+
+
+                    <div class="govuk-form-group">
+
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2"
+                                id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input
+                                class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-!-margin-bottom-6"
+                                id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
                       aria-describedby="more-detail-hint"></textarea>
                   </div>
