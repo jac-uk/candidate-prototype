@@ -21,81 +21,67 @@ Add new exercise
             Qualifications
           </h1>
 
-
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="what-qual-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                What are you qualified as? </legend>
+                What are you qualified as?
+              </legend>
               <span class="govuk-hint">
                 Choose 1 option.
               </span>
               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="what-qual" name="contacted" type="radio" value="email"
-                    data-aria-controls="conditional-what-qual">
-                  <label class="govuk-label govuk-radios__label" for="what-qual">
+                  <input class="govuk-radios__input" id="what-qual-1" name="what-qual" type="radio" value="email">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-1">
                     Advocate - Scotland
                   </label>
                 </div>
-
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio"
-                      value="email" data-aria-controls="judge-conditional-yes">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
-                      Barrister
-                    </label>
-                  </div>
-
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="what-qual-2" name="contacted" type="radio" value="phone"
-                      data-aria-controls="conditional-what-qual-2">
-                    <label class="govuk-label govuk-radios__label" for="what-qual-2">
-                      Solicitor
-                    </label>
-                  </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual-2" name="what-qual" type="radio" value="email"
+                    data-aria-controls="barrister-yes">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-2">
+                    Barrister
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="what-qual-3" name="what-qual" type="radio" value="phone">
+                  <label class="govuk-label govuk-radios__label" for="what-qual-3">
+                    Solicitor
+                  </label>
                 </div>
                 <div
                   class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                  id="judge-conditional-yes">
+                  id="barrister-yes">
                   <div class="govuk-form-group">
                     <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                        <h1 class="govuk-fieldset__heading">
-                          Have you completed pupillage?
-                        </h1>
+                        Have you completed pupillage?
                       </legend>
                       <div class="govuk-radios">
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live"
-                            type="radio" value="england">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                          <input class="govuk-radios__input" id="pupillage-1" name="pupillage" type="radio"
+                            value="england">
+                          <label class="govuk-label govuk-radios__label" for="pupillage-1">
                             Yes
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live"
-                            type="radio" value="scotland" data-aria-controls="sitting-days-no">
-                          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                          <input class="govuk-radios__input" id="pupillage-2" name="pupillage" type="radio"
+                            value="scotland" data-aria-controls="pupillage-no">
+                          <label class="govuk-label govuk-radios__label" for="pupillage-2">
                             No
                           </label>
                         </div>
                         <div
                           class="govuk-radios__conditional govuk-radios__conditional--judicial govuk-radios__conditional--hidden"
-                          id="sitting-days-no">
+                          id="pupillage-no" style="margin-bottom: 0;">
                           <div class="govuk-form-group">
                             <fieldset class="govuk-fieldset">
                               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                                <h1 class="govuk-fieldset__heading">
-                                  Explain why you did not complete pupillage.
-                                </h1>
-                                <div class="govuk-form-group">
-                                  <label class="govuk-label" for="more-detail">
-                                  </label>
-
-                                  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
-                                    aria-describedby="more-detail-hint"></textarea>
-                                </div>
+                                Explain why you did not complete pupillage
+                              </legend>
+                              <textarea style="margin-bottom: 0;" class="govuk-textarea" id="more-detail"
+                                name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
                             </fieldset>
                           </div>
                         </div>
@@ -103,8 +89,6 @@ Add new exercise
                   </div>
             </fieldset>
           </div>
-
-
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="where-qual-conditional-hint">
