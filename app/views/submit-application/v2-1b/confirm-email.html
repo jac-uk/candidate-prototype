@@ -12,24 +12,33 @@ Add new exercise
 
   <!--MAIN WRAPPER-->
   <main class="govuk-main-wrapper">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+    <form class="form" action="check-email" method="post">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
 
-        <!--PAGE TITLE-->
-        <h1 class="govuk-heading-xl">
-          Sign in or create an account
-        </h1>
-        <p class="govuk-body-l">
-        </p>
-        <p class="govuk-body-l">
-        </p>
-        <br>
-        <p class="govuk-body-l"> <a href="task-list-pre">[sign-in with google button] </a></p>
+          <!--PAGE TITLE-->
+          <h1 class="govuk-heading-xl">
+            Enter your email address
+          </h1>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="email">
+              Email address
+            </label>
+            <span id="email-hint" class="govuk-hint">
+              We need to confirm your email address before you can apply.
+            </span>
+            <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint"
+              autocomplete="email" spellcheck="false">
+          </div>
 
 
-        <!--END MAIN WRAPPER-->
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+          <!--END MAIN WRAPPER-->
+        </div>
       </div>
-    </div>
   </main>
   {% include "includes/footer.html" %}
 
