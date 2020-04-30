@@ -9,7 +9,9 @@
   "scripts": {
     "start": "node start.js",
     "lint": "standard",
-    "test": "npm run lint && gulp generate-assets && jest"
+    "test": "npm run lint && gulp generate-assets && jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@ministryofjustice/frontend": "0.0.10-alpha",
@@ -45,7 +47,8 @@
     "require-dir": "^1.0.0",
     "sync-request": "^6.0.0",
     "universal-analytics": "^0.4.16",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "snyk": "^1.316.1"
   },
   "greenkeeper": {
     "ignore": [
@@ -58,5 +61,6 @@
     "node-sass": "^4.12.0",
     "standard": "^12.0.1",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
